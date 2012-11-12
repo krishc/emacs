@@ -1,0 +1,615 @@
+;; Object csi_common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "csi_common/"
+  :tables (list 
+   (semanticdb-table "csi_common.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CSI_COMMON_H" variable (:constant-flag t) nil [324 336])
+            ("_SRRFCAMsg_FrameSync0" variable (:constant-flag t) nil [552 573])
+            ("_SRRFCAMsg_FrameSync1" variable (:constant-flag t) nil [588 609])
+            ("SRRFCA_amMATFeatureId" variable (:constant-flag t) nil [624 645])
+            ("srr_fca_msgtypes" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRFCAMsg_GetVersionReq" variable
+                             (:constant-flag t
+                              :default-value (711 712)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [669 712])
+                          ("SRRFCAMsg_GetVersionRsp" variable
+                             (:constant-flag t
+                              :default-value (787 788)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [745 788])
+                          ("SRRFCAMsg_SetLEDPatternReq" variable
+                             (:constant-flag t
+                              :default-value (863 864)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [821 864])
+                          ("SRRFCAMsg_SetLEDPatternRsp" variable
+                             (:constant-flag t
+                              :default-value (931 932)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [889 932])
+                          ("SRRFCAMsg_SetConfigParamsReq" variable
+                             (:constant-flag t
+                              :default-value (981 982)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [939 982])
+                          ("SRRFCAMsg_SetConfigParamsRsp" variable
+                             (:constant-flag t
+                              :default-value (1055 1056)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1013 1056])
+                          ("SRRFCAMsg_MonitorBeaconReq" variable
+                             (:constant-flag t
+                              :default-value (1104 1105)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1062 1105])
+                          ("SRRFCAMsg_MonitorBeaconRsp" variable
+                             (:constant-flag t
+                              :default-value (1186 1187)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1144 1187])
+                          ("SRRFCAMsg_GetInfoReq" variable
+                             (:constant-flag t
+                              :default-value (1236 1237)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1194 1237])
+                          ("SRRFCAMsg_GetInfoRsp" variable
+                             (:constant-flag t
+                              :default-value (1325 1327)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1283 1327])
+                          ("SRRFCAMsg_SetQSCWakeUpTimerReq" variable
+                             (:constant-flag t
+                              :default-value (1404 1406)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1362 1406])
+                          ("SRRFCAMsg_SetQSCWakeUpTimerRsp" variable
+                             (:constant-flag t
+                              :default-value (1483 1485)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1441 1485])
+                          ("SRRFCAMsg_GetLogReq" variable
+                             (:constant-flag t
+                              :default-value (1535 1537)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1493 1537])
+                          ("SRRFCAMsg_GetLogRsp" variable
+                             (:constant-flag t
+                              :default-value (1605 1607)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1563 1607])
+                          ("SRRFCAMsg_PowerOffReq" variable
+                             (:constant-flag t
+                              :default-value (1680 1682)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1638 1682])
+                          ("SRRFCAMsg_SetLogLevelReq" variable
+                             (:constant-flag t
+                              :default-value (1786 1788)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1744 1788])
+                          ("SRRFCAMsg_SetLogLevelRsp" variable
+                             (:constant-flag t
+                              :default-value (1867 1869)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1825 1869])
+                          ("SRRFCAMsg_GetBatteryVoltageReq" variable
+                             (:constant-flag t
+                              :default-value (1916 1918)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1874 1918])
+                          ("SRRFCAMsg_GetBatteryVoltageRsp" variable
+                             (:constant-flag t
+                              :default-value (1992 1994)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1950 1994])
+                          ("SRRFCAMsg_DockNotification" variable
+                             (:constant-flag t
+                              :default-value (2072 2074)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2030 2074])
+                          ("SRRFCAMsg_DockNotificationRsp" variable
+                             (:constant-flag t
+                              :default-value (2150 2152)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2108 2152])
+                          ("SRRFCAMsg_GetBeaconFrameStatisticsReq" variable
+                             (:constant-flag t
+                              :default-value (2199 2201)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2157 2201])
+                          ("SRRFCAMsg_GetBeaconFrameStatisticsRsp" variable
+                             (:constant-flag t
+                              :default-value (2248 2250)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2206 2250])
+                          ("SRRFCAMsg_UpdateFeatureReq" variable
+                             (:constant-flag t
+                              :default-value (2297 2299)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2255 2299])
+                          ("SRRFCAMsg_UpdateFeatureRsp" variable
+                             (:constant-flag t
+                              :default-value (2345 2347)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2303 2347])
+                          ("SRRFCAMsg_GetAMLogsReq" variable
+                             (:constant-flag t
+                              :default-value (2393 2395)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2351 2395])
+                          ("SRRFCAMsg_GetAMLogsRsp" variable
+                             (:constant-flag t
+                              :default-value (2441 2443)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2399 2443])
+                          ("SRRFCAMsg_InfoChangIndicator" variable
+                             (:constant-flag t
+                              :default-value (2505 2507)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2463 2507])
+                          ("SRRFCAMsg_SetLEDConfiguration" variable
+                             (:constant-flag t
+                              :default-value (2572 2574)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2530 2574])
+                          ("SRRFCAMsg_SetLEDEvent" variable
+                             (:constant-flag t
+                              :default-value (2637 2639)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2595 2639])
+                          ("SRRFCAMsg_MsgErrorIndicator" variable
+                             (:constant-flag t
+                              :default-value (2702 2704)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2660 2704])
+                          ("SRRFCAMsg_InitAMDataWithSizeReq" variable
+                             (:constant-flag t
+                              :default-value (2767 2770)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2725 2770])
+                          ("SRRFCAMsg_PingReq" variable
+                             (:constant-flag t
+                              :default-value (2816 2819)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2774 2819])
+                          ("SRRFCAMsg_PingRsp" variable
+                             (:constant-flag t
+                              :default-value (2881 2884)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2839 2884])
+                          ("SRRFCAMsg_GetBatteryLevelArrayReq" variable
+                             (:constant-flag t
+                              :default-value (2946 2949)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2904 2949])
+                          ("SRRFCAMsg_GetBatteryLevelArrayRsp" variable
+                             (:constant-flag t
+                              :default-value (2995 2998)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2953 2998])
+                          ("SRRFCAMsg_Highest" variable
+                             (:constant-flag t
+                              :default-value (3022 3060)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3002 3060]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [651 3077])
+            ("srr_fca_event_type" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRFCAEvt_NoEvent" variable
+                             (:constant-flag t
+                              :default-value (3275 3276)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3255 3276])
+                          ("SRRFCAEvt_PowerOn" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3281 3299])
+                          ("SRRFCAEvt_PowerOff" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3302 3321])
+                          ("SRRFCAEvt_Walk" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3324 3339])
+                          ("SRRFCAEvt_WalkStop" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3342 3361])
+                          ("SRRFCAEvt_BatteryGood" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3364 3386])
+                          ("SRRFCAEvt_BatteryBad" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3389 3410])
+                          ("SRRFCAEvt_BatteryMax" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3413 3434])
+                          ("SRRFCAEvt_OnDemandLocateStart" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3449 3479])
+                          ("SRRFCAEvt_OnDemandLocateStop" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3483 3512])
+                          ("SRRFCAEvt_PageStart" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3516 3536])
+                          ("SRRFCAEvt_PageStop" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3539 3558])
+                          ("SRRFCAEvt_Dock" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3561 3576])
+                          ("SRRFCAEvt_UnDock" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3579 3596])
+                          ("SRRFCAEvt_UnDockedCharged" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3599 3625])
+                          ("SRRFCAEvt_UnDockedNotCharged" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3628 3657])
+                          ("SRRFCAEvt_WalkPhaseOne" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3660 3683])
+                          ("SRRFCAEvt_ContinuousTrackStart" variable
+                             (:constant-flag t
+                              :default-value (3762 3764)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3729 3764])
+                          ("SRRFCAEvt_ContinuousTrackStop" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3768 3798])
+                          ("SRRFCAEvt_UpgradeStart" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3808 3831])
+                          ("SRRFCAEvt_UpgradeStop" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3848 3870])
+                          ("SRRFCAEvt_Debug_BeaconIn" variable
+                             (:constant-flag t
+                              :default-value (3948 3951)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3921 3951])
+                          ("SRRFCAEvt_Debug_BeaconOut" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3955 3981])
+                          ("SRRFCAEvt_Debug_BeaconBreached" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3984 4015])
+                          ("SRRFCAEvt_Debug_BeaconDropped" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4018 4048])
+                          ("SRRFCAEvt_Debug_RadioOn" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4051 4075])
+                          ("SRRFCAEvt_Debug_RadioOff" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4078 4103])
+                          ("SRRFCAEvt_Debug_ActivityDetected" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4106 4139])
+                          ("SRRFCAEvt_Debug_ActivityNotDetected" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4142 4178])
+                          ("SRRFCAEvt_Debug_Reset" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4181 4203])
+                          ("SRRFCAEvt_Debug_CollarAttached" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4206 4237])
+                          ("SRRFCAEvt_Debug_CollarDettached" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4240 4272])
+                          ("SRRFCAEvt_Debug_CriticalError" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4275 4305])
+                          ("SRRFCAEvt_Debug_WarningError" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4308 4337])
+                          ("SRRFCAEvt_Generic" variable
+                             (:constant-flag t
+                              :default-value (4387 4390)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4367 4390]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3238 4435])
+            ("SRRTYPES_StateMask_Indicator" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRTYPES_StateMask_OOBC" variable
+                             (:constant-flag t
+                              :default-value (4493 4499)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4455 4499])
+                          ("SRRTYPES_StateMask_DevDetached" variable
+                             (:constant-flag t
+                              :default-value (4571 4577)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4533 4577])
+                          ("SRRTYPES_StateMask_FTDBatLow" variable
+                             (:constant-flag t
+                              :default-value (4654 4660)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4616 4660])
+                          ("SRRTYPES_StateMask_WalkBtnPres" variable
+                             (:constant-flag t
+                              :default-value (4703 4709)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4665 4709])
+                          ("SRRTYPES_StateMask_DrainLogBuffer" variable
+                             (:constant-flag t
+                              :default-value (4752 4758)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4714 4758])
+                          ("SRRTYPES_StateMask_FTDSRRPowerState" variable
+                             (:constant-flag t
+                              :default-value (4802 4808)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4764 4808])
+                          ("SRRTYPES_StateMask_SysHwErr" variable
+                             (:constant-flag t
+                              :default-value (4874 4880)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4836 4880])
+                          ("SRRTYPES_StateMask_SwUpgadeRst" variable
+                             (:constant-flag t
+                              :default-value (4923 4929)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4885 4929])
+                          ("SRRTYPES_StateMask_FbcBattery0" variable
+                             (:constant-flag t
+                              :default-value (4974 4980)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4936 4980])
+                          ("SRRTYPES_StateMask_FbcBattery1" variable
+                             (:constant-flag t
+                              :default-value (5023 5029)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4985 5029])
+                          ("SRRTYPES_StateMask_FbcRecntPw" variable
+                             (:constant-flag t
+                              :default-value (5072 5078)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5034 5078])
+                          ("SRRTYPES_StateMask_AcPowerLoss" variable
+                             (:constant-flag t
+                              :default-value (5121 5127)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5083 5127])
+                          ("SRRTYPES_StateMask_OnDemandLoc" variable
+                             (:constant-flag t
+                              :default-value (5170 5176)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5132 5176])
+                          ("SRRTYPES_StateMask_Reserved" variable
+                             (:constant-flag t
+                              :default-value (5219 5225)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5181 5225])
+                          ("SRRTYPES_StateMask_trainMode" variable
+                             (:constant-flag t
+                              :default-value (5268 5274)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5230 5274]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4437 5311])
+            ("msg_hndlr_csi_event_mask" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRTYPES_EventMask_WakeUp" variable
+                             (:constant-flag t
+                              :default-value (5364 5370)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5331 5370])
+                          ("SRRTYPES_EventMask_Reset" variable
+                             (:constant-flag t
+                              :default-value (5408 5414)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5375 5414])
+                          ("SRRTYPES_EventMask_FTDSRRErr" variable
+                             (:constant-flag t
+                              :default-value (5453 5459)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5420 5459]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [5313 5492])
+            ("CSI_MSG_SRR_TAG_ID" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRR_TAG_LED_EVENT_TABLE" variable
+                             (:constant-flag t
+                              :default-value (5547 5548)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5513 5548])
+                          ("SRR_TAG_LED_PARAM_TABLE" variable
+                             (:constant-flag t
+                              :default-value (5586 5587)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5552 5587])
+                          ("SRR_TAG_FEATURE_LIST_REC" variable
+                             (:constant-flag t
+                              :default-value (5626 5627)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5592 5627])
+                          ("SRR_TAG_AM_MAT_PARAMS_REC" variable
+                             (:constant-flag t
+                              :default-value (5665 5666)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5631 5666])
+                          ("SRR_TAG_FEATURE_STATUS_REC" variable
+                             (:constant-flag t
+                              :default-value (5705 5710)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5671 5710])
+                          ("SRR_TAG_AM_MAT_SUB_REC" variable
+                             (:constant-flag t
+                              :default-value (5748 5753)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5714 5753])
+                          ("SRR_TAG_AM_MAT_BNS_REC" variable
+                             (:constant-flag t
+                              :default-value (5826 5831)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5792 5831])
+                          ("SRR_TAG_DBG_RSSI_LEVELS" variable
+                             (:constant-flag t
+                              :default-value (5898 5903)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5864 5903])
+                          ("SRR_TAG_DBG_ERROR_LEVELS" variable
+                             (:constant-flag t
+                              :default-value (5971 5976)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5937 5976])
+                          ("SRR_TAG_DEB_BEACON_LOG" variable
+                             (:constant-flag t
+                              :default-value (6045 6050)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6011 6050]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [5495 6109])
+            ("csi_common_feature_ids" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("CSI_COMMON_FEATURE_TYPE_AM_MAT" variable
+                             (:constant-flag t
+                              :default-value (6168 6169)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6128 6169])
+                          ("CSI_COMMON_FEATURE_TYPE_E_FORCE_UINT8" variable
+                             (:constant-flag t
+                              :default-value (6214 6218)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6174 6218]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [6111 6280])
+            ("csi_common_feature_status_type" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("CSI_COMMON_FEATURE_STATUS_DISABLED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6344 6379])
+                          ("CSI_COMMON_FEATURE_STATUS_ENABLED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6382 6416])
+                          ("CSI_COMMON_FEATURE_E_FORCE_UINT8" variable
+                             (:constant-flag t
+                              :default-value (6458 6462)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6420 6462]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [6327 6537])
+            ("csi_common_am_params_rec" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("set_id" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6795 6812])
+                          ("activity_thresh" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7201 7227])
+                          ("inactivity_thresh" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7264 7292])
+                          ("inactivity_mat_duration" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7327 7361])
+                          ("tap_thresh" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7388 7409])
+                          ("tap_duration" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7451 7474])
+                          ("jump_threshold" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7512 7537])
+                          ("jump_duration" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7575 7599])
+                          ("second_tap_latency_dur" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7636 7669])
+                          ("second_tap_window_dur" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7836 7868]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6776 8060])
+            ("csi_common_mat_sub_rec" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("set_id" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8117 8132])
+                          ("sampling_periodicity" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8282 8311])
+                          ("num_mat_samples" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8364 8388])
+                          ("compression_type" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8463 8488])
+                          ("num_mat_bytes" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8635 8657])
+                          ("mat_bytes" variable
+                             (:pointer 1
+                              :type ("uint8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8705 8723]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8098 8971])
+            ("csi_common_bns_sub_rec" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("num_button_press_in_sub_rec" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9029 9067])
+                          ("button_press_position" variable
+                             (:pointer 1
+                              :type ("uint16" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9070 9102]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9010 9127]))          
+    :file "csi_common.h"
+    :pointmax 9137
+    :fsize 9371
+    :lastmodtime '(20458 6507)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SRRFCAMsg_FrameSync0" . ((number "0xde" 575 . 579)))
+          ("_SRRFCAMsg_FrameSync1" . ((number "0xad" 611 . 615)))
+          ("SRRFCA_amMATFeatureId" . ((number "2" 646 . 647)))
+          ("CSI_COMMON_H")
+          )
+
+    )
+   )
+  :file "!drive_c!Users!kchimala!main!client!fido!10-CA024-P1!csi_common!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

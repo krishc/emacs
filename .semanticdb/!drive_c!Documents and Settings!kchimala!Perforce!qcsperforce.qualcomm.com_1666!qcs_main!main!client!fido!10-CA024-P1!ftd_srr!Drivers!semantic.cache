@@ -1,0 +1,235 @@
+;; Object Drivers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Drivers/"
+  :tables (list 
+   (semanticdb-table "uart_intfc_cc430.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_intfc_h" variable (:constant-flag t) nil [2368 2380])
+            ("stddef.h" include (:system-flag t) nil [2382 2401])
+            ("uart_cc430.h" include nil nil [2402 2425])
+            ("uart_intfc_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2782 2788]))                  
+                :type "void")
+                nil [2760 2789])
+            ("tx_send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3068 3085])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3086 3098]))                  
+                :type "bool")
+                nil [3054 3099])
+            ("tx_send_payLoadData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3617 3634])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3635 3647]))                  
+                :type "bool")
+                nil [3591 3648])
+            ("tx_send_wait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3668 3685])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3686 3698]))                  
+                :type "bool")
+                nil [3649 3699])
+            ("tx_peek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3782 3788]))                  
+                :type "int")
+                nil [3769 3789])
+            ("rx_peek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3880 3886]))                  
+                :type "int")
+                nil [3867 3887])
+            ("rx_receive" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4129 4140])
+                    ("max_len" variable (:type "int") (reparse-symbol arg-sub-list) [4141 4154]))                  
+                :type "int")
+                nil [4113 4155])
+            ("uart_busy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4293 4299]))                  
+                :type "bool")
+                nil [4277 4300]))          
+    :file "uart_intfc_cc430.h"
+    :pointmax 4310
+    :fsize 4389
+    :lastmodtime '(20166 54626)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("uart_intfc_h")
+          )
+
+    )
+   (semanticdb-table "Radio.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("RADIO_H" variable (:constant-flag t) nil [611 618])
+            ("InitRadio" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [995 1000]))                  
+                :type "void")
+                nil [980 1001])
+            ("ReceiveOn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1172 1177]))                  
+                :type "void")
+                nil [1157 1178])
+            ("ReceiveOff" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1224 1229]))                  
+                :type "void")
+                nil [1208 1230])
+            ("Mrfi_CalculateRssi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rawValue" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1328 1351]))                  
+                :type "signed char")
+                nil [1297 1352]))          
+    :file "Radio.h"
+    :pointmax 1362
+    :fsize 1401
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("RADIO_H")
+          )
+
+    )
+   (semanticdb-table "PIO.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PIO_H" variable (:constant-flag t) nil [599 604])
+            ("Project.h" include nil nil [606 626])
+            ("InitButtonLeds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [649 654]))                  
+                :type "void")
+                nil [629 655]))          
+    :file "PIO.h"
+    :pointmax 665
+    :fsize 686
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PIO_H")
+          )
+
+    )
+   (semanticdb-table "uart_cc430.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_h" variable (:constant-flag t) nil [2356 2362])
+            ("bool" variable (:constant-flag t) nil [2552 2556])
+            ("true" variable (:constant-flag t) nil [2579 2583])
+            ("false" variable (:constant-flag t) nil [2594 2599])
+            ("stddef.h" include (:system-flag t) nil [2611 2630])
+            ("../HAL/options_cc430.h" include nil nil [2658 2691])
+            ("UART_CLOCK_MHZ" variable (:constant-flag t) nil [3019 3033])
+            ("BSP_CONFIG_CLOCK_MHZ" variable (:constant-flag t) nil [3065 3085])
+            ("UART_IRQ_ENABLED" variable (:constant-flag t) nil [3135 3151])
+            ("UART_IRQ_DISABLED" variable (:constant-flag t) nil [3164 3181])
+            ("UART_IRQ_PENDING" variable (:constant-flag t) nil [3193 3209])
+            ("UART_IRQ_IDLE" variable (:constant-flag t) nil [3222 3235])
+            ("UART_FLOW_CONTROL_ON" variable (:constant-flag t) nil [3293 3313])
+            ("UART_FLOW_CONTROL_OFF" variable (:constant-flag t) nil [3325 3346])
+            ("UART_PARITY_NONE" variable (:constant-flag t) nil [3391 3407])
+            ("UART_PARITY_EVEN" variable (:constant-flag t) nil [3418 3434])
+            ("UART_PARITY_ODD" variable (:constant-flag t) nil [3445 3460])
+            ("UART_1_STOP_BIT" variable (:constant-flag t) nil [3512 3527])
+            ("UART_2_STOP_BITS" variable (:constant-flag t) nil [3540 3556])
+            ("UART_BAUD_RATE" variable (:constant-flag t) nil [3686 3700])
+            ("UART_FLOW_CONTROL" variable (:constant-flag t) nil [3751 3768])
+            ("UART_PARITY_MODE" variable (:constant-flag t) nil [3834 3850])
+            ("UART_STOP_BITS" variable (:constant-flag t) nil [3910 3924])
+            ("UART_CC430_ESC_SEQ" variable (:constant-flag t) nil [3962 3980])
+            ("uart_get_tx_data_type" variable
+               (:functionpointer-flag t
+                :type "unsigned char")
+                nil [20928 20978])
+            ("uart_put_rx_data_type" variable
+               (:functionpointer-flag t
+                :type "unsigned char")
+                nil [21403 21452])
+            ("uart_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21851 21857]))                  
+                :type "void")
+                nil [21835 21858])
+            ("uart_tx_message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handler" variable (:type ("uart_get_tx_data_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22273 22304]))                  
+                :type "unsigned char")
+                nil [22251 22305])
+            ("uart_rx_message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handler" variable (:type ("uart_put_rx_data_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22741 22772]))                  
+                :type "unsigned char")
+                nil [22719 22773]))          
+    :file "uart_cc430.h"
+    :pointmax 22795
+    :fsize 23254
+    :lastmodtime '(20166 54626)
+    :unmatched-syntax '((TYPEDEF 21395 . 21402) (TYPEDEF 20920 . 20927))
+    :lexical-table 
+        '(("UART_IRQ_DISABLED" . ((number "0" 3183 . 3184)))
+          ("false" . ((number "0" 2600 . 2601)))
+          ("UART_IRQ_ENABLED" . ((number "1" 3154 . 3155)))
+          ("UART_IRQ_PENDING" . ((number "1" 3212 . 3213)))
+          ("UART_FLOW_CONTROL_OFF" . ((number "0" 3347 . 3348)))
+          ("UART_PARITY_MODE" . ((symbol "UART_PARITY_EVEN" 3853 . 3869)))
+          ("UART_CC430_ESC_SEQ" . ((number "0x5C" 3982 . 3986)))
+          ("UART_PARITY_EVEN" . ((number "1" 3435 . 3436)))
+          ("UART_PARITY_ODD" . ((number "2" 3462 . 3463)))
+          ("bool" . ((UNSIGNED "unsigned" 2557 . 2565) (CHAR "char" 2566 . 2570)))
+          ("UART_IRQ_IDLE" . ((number "0" 3241 . 3242)))
+          ("UART_1_STOP_BIT" . ((number "0" 3530 . 3531)))
+          ("uart_h")
+          ("UART_2_STOP_BITS" . ((number "1" 3558 . 3559)))
+          ("UART_BAUD_RATE" . ((number "115200" 3701 . 3707)))
+          ("UART_PARITY_NONE" . ((number "0" 3408 . 3409)))
+          ("true" . ((number "1" 2584 . 2585)))
+          ("UART_FLOW_CONTROL_ON" . ((number "1" 3315 . 3316)))
+          ("UART_STOP_BITS" . ((symbol "UART_2_STOP_BITS" 3929 . 3945)))
+          ("UART_CLOCK_MHZ" . ((symbol "BSP_CONFIG_CLOCK_MHZ" 3034 . 3054)))
+          ("BSP_CONFIG_CLOCK_MHZ" . ((number "12" 3087 . 3089)))
+          ("UART_FLOW_CONTROL" . ((symbol "UART_FLOW_CONTROL_OFF" 3770 . 3791)))
+          )
+
+    )
+   )
+  :file "!drive_c!Documents and Settings!kchimala!Perforce!qcsperforce.qualcomm.com_1666!qcs_main!main!client!fido!10-CA024-P1!ftd_srr!Drivers!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

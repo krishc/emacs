@@ -1,0 +1,523 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "test_SRRFCAInterfaceManager.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unity.h" include nil nil [2 20])
+            ("SRRFCAInterfaceManager.h" include nil nil [21 56])
+            ("SRRTypes.h" include nil nil [57 78])
+            ("csi_common.h" include nil nil [79 102])
+            ("SRRFCAMsg.h" include nil nil [103 125])
+            ("SRRError.h" include nil nil [126 147])
+            ("SRRLEDButtonManager.h" include nil nil [148 180])
+            ("SRRInterruptServiceEngine.h" include nil nil [181 219])
+            ("SRRBeaconProcessingManager.h" include nil nil [220 259])
+            ("uart_cc430.h" include nil nil [260 283])
+            ("uart_intfc_cc430.h" include nil nil [284 313])
+            ("SRRFlashAdapter.h" include nil nil [314 342])
+            ("SRRBatteryMonitor.h" include nil nil [343 373])
+            ("SRREventReceptor.h" include nil nil [374 403])
+            ("SRRMainprocessingEngine.h" include nil nil [404 440])
+            ("SRRConfigurationDataStorage.h" include nil nil [441 481])
+            ("SRRLoggingManager.h" include nil nil [482 512])
+            ("SRRFCAInterfaceManager_Statemask" variable
+               (:typemodifiers ("extern")
+                :type ("uint16" type (:type "class") nil nil))
+                nil [514 561])
+            ("SRRFCAInterfaceManager_Eventmask" variable
+               (:typemodifiers ("extern")
+                :type ("uint16" type (:type "class") nil nil))
+                nil [562 609])
+            ("SRRFCAInterfaceManager_OnDemandCount" variable
+               (:typemodifiers ("extern")
+                :type ("uint8" type (:type "class") nil nil))
+                nil [610 661])
+            ("SRRFIM_OldSatemask" variable
+               (:typemodifiers ("extern")
+                :type ("uint16" type (:type "class") nil nil))
+                nil [664 697])
+            ("SRRFIM_OldEventmask" variable
+               (:typemodifiers ("extern")
+                :type ("uint16" type (:type "class") nil nil))
+                nil [698 732])
+            ("SRRFIM_OldOnDemandCount" variable
+               (:typemodifiers ("extern")
+                :type ("uint8" type (:type "class") nil nil))
+                nil [733 771])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [785 790]))                  
+                :type "void")
+                nil [774 795])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [811 816]))                  
+                :type "void")
+                nil [797 821])
+            ("test_DoStateDiff_OnlyStateDifferent_ShouldBeTrue" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [877 882]))                  
+                :type "void")
+                nil [823 1175])
+            ("test_DoStateDiff_OnlyEventDifferent_ShouldBeTrue" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1231 1236]))                  
+                :type "void")
+                nil [1177 1530])
+            ("test_DoStateDiff_OnlyODLDifferent_ShouldBeTrue" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1584 1589]))                  
+                :type "void")
+                nil [1532 1882])
+            ("test_DoStateDiff_NoDiff_ShouldBeFalse" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1928 1933]))                  
+                :type "void")
+                nil [1885 2221])
+            ("test_SaveState_ShouldBeTrue" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2256 2261]))                  
+                :type "void")
+                nil [2223 2584]))          
+    :file "test_SRRFCAInterfaceManager.c"
+    :pointmax 2585
+    :fsize 2692
+    :lastmodtime '(20460 64722)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_SRRLEDButtonManager.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "test_SRRLEDButtonManager.c"
+    :pointmax 1889
+    :fsize 1951
+    :lastmodtime '(20458 6512)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_SRRFCAMsg.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRTypes.h" include nil nil [2 23])
+            ("SRRFlashAdapter.h" include nil nil [24 52])
+            ("unity.h" include nil nil [53 71])
+            ("SRRLoggingManager.h" include nil nil [72 102])
+            ("SRRConfigurationDataStorage.h" include nil nil [103 143])
+            ("SRRFCAInterfaceManager.h" include nil nil [144 179])
+            ("csi_common.h" include nil nil [180 203])
+            ("uart_cc430.h" include nil nil [204 227])
+            ("uart_intfc_cc430.h" include nil nil [229 258])
+            ("SRRInterruptServiceEngine.h" include nil nil [259 297])
+            ("SRRLEDButtonManager.h" include nil nil [298 330])
+            ("SRRBeaconProcessingManager.h" include nil nil [331 370])
+            ("SRRBatteryMonitor.h" include nil nil [371 401])
+            ("SRREventReceptor.h" include nil nil [402 431])
+            ("SRRFCAMsg.h" include nil nil [432 454])
+            ("SRRAccel.h" include nil nil [455 476])
+            ("io_i2c.h" include nil nil [477 496])
+            ("acc_adxl346.h" include nil nil [497 521])
+            ("SRRMainprocessingEngine.h" include nil nil [522 558])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [571 576]))                  
+                :type "void")
+                nil [560 613])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [629 634]))                  
+                :type "void")
+                nil [615 638])
+            ("test_SRRFCAMsg_DisableAMFeature" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [692 697]))                  
+                :type "void")
+                nil [655 887]))          
+    :file "test_SRRFCAMsg.c"
+    :pointmax 888
+    :fsize 926
+    :lastmodtime '(20458 6512)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_SRREventReciptor.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unity.h" include nil nil [2 20])
+            ("SRRTypes.h" include nil nil [21 42])
+            ("SRRMainprocessingEngine.h" include nil nil [43 79])
+            ("SRRMainProcessingEngine_PowerState" variable
+               (:typemodifiers ("extern")
+                :type ("SRRMain_PowerStateType" type (:type "class") nil nil))
+                nil [80 145])
+            ("SRRInterruptServiceEngine.h" include nil nil [146 184])
+            ("SRRConfigurationDataStorage.h" include nil nil [185 225])
+            ("SRRBatteryMonitor.h" include nil nil [226 256])
+            ("SRRBeaconProcessingManager.h" include nil nil [257 296])
+            ("SRRFCAInterfaceManager.h" include nil nil [297 332])
+            ("SRRFlashAdapter.h" include nil nil [333 361])
+            ("SRRError.h" include nil nil [362 383])
+            ("SRRLoggingManager.h" include nil nil [384 414])
+            ("SRREventReceptor.h" include nil nil [415 444])
+            ("uart_intfc_cc430.h" include nil nil [445 474])
+            ("uart_cc430.h" include nil nil [475 498])
+            ("SRRLEDButtonManager.h" include nil nil [499 531])
+            ("SRRLEDButtonManager_CurrentPatternTotalTimerId" variable
+               (:typemodifiers ("extern")
+                :type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil))
+                nil [891 979])
+            ("SRREvent_CachedLEDTimerId" variable
+               (:typemodifiers ("extern")
+                :type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil))
+                nil [980 1047])
+            ("SRRInterruptServiceEngine_Timers" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("SRRInterruptServiceEngine_TimerInst" type (:type "class") nil nil))
+                nil [1048 1164])
+            ("SRRInterruptServiceEngine_Initialized" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1165 1215])
+            ("SRREvent_Initialized" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1216 1249])
+            ("SRREvent_SetEventStatus" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("theCurrentEvent" variable (:type ("SRREvent_EventType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1286 1321])
+                    ("theCacheEvent" variable (:type ("SRREvent_EventType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1351 1384])
+                    ("theCachedEventTimeLeft" variable (:type ("MillisecondsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1414 1455]))                  
+                :type "void")
+                nil [1250 1456])
+            ("SRREvent_GetEventstatus" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pCurrentEvent" variable
+                       (:pointer 1
+                        :type ("SRREvent_EventType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1493 1527])
+                    ("pCacheEvent" variable
+                       (:pointer 1
+                        :type ("SRREvent_EventType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1557 1589])
+                    ("pCachedEventTimeLeft" variable
+                       (:pointer 1
+                        :type ("MillisecondsType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1619 1659]))                  
+                :type "void")
+                nil [1457 1660])
+            ("SRRLEDButtonManager_GetPendingBlinkTimer" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil))
+                nil [1663 1747])
+            ("SRRLEDButtonManager_SetPendingBlinkTimer" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pendingBlinkTimer" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1801 1853]))                  
+                :type "void")
+                nil [1748 1854])
+            ("SRRInterruptServiceEngine_TriggerNextTime_INVALID" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("MillisecondsType" type (:type "class") nil nil))
+                nil [2051 2144])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2157 2162]))                  
+                :type "void")
+                nil [2146 2483])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2499 2504]))                  
+                :type "void")
+                nil [2485 2509])
+            ("test_LEDPatternEnded_CacheTimeLeftZero_ShouldIgnoreCache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2572 2577]))                  
+                :type "void")
+                nil [2510 3546])
+            ("test_SetLEDPatternForEvent_CacheTimeLeftZero_ShouldIgnoreCache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3616 3621]))                  
+                :type "void")
+                nil [3548 4476]))          
+    :file "test_SRREventReciptor.c"
+    :pointmax 4476
+    :fsize 4582
+    :lastmodtime '(20458 25000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_MAT_LoggingManager.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRTypes.h" include nil nil [3 24])
+            ("SRRFlashAdapter.h" include nil nil [25 53])
+            ("unity.h" include nil nil [54 72])
+            ("SRRLoggingManager.h" include nil nil [74 104])
+            ("SRRConfigurationDataStorage.h" include nil nil [105 145])
+            ("SRRFCAInterfaceManager.h" include nil nil [146 181])
+            ("csi_common.h" include nil nil [182 205])
+            ("uart_cc430.h" include nil nil [206 229])
+            ("uart_intfc_cc430.h" include nil nil [231 260])
+            ("SRRInterruptServiceEngine.h" include nil nil [261 299])
+            ("SRRLEDButtonManager.h" include nil nil [300 332])
+            ("SRRBeaconProcessingManager.h" include nil nil [333 372])
+            ("SRRBatteryMonitor.h" include nil nil [373 403])
+            ("SRREventReceptor.h" include nil nil [404 433])
+            ("SRRMainprocessingEngine.h" include nil nil [434 470])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [483 488]))                  
+                :type "void")
+                nil [472 559])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [575 580]))                  
+                :type "void")
+                nil [561 584])
+            ("test_SRRLoggingManager_Initialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [654 659]))                  
+                :type "void")
+                nil [615 740])
+            ("test_SRRLoggingManager_LogRawMovementNibbleWritingOneNibble" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [808 813]))                  
+                :type "void")
+                nil [743 1201])
+            ("test_SRRLoggingManager_LogRawMovementNibbleWritingToFullRAM" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1269 1274]))                  
+                :type "void")
+                nil [1204 2001])
+            ("test_SRRLoggingManager_LogRawMovementNibbleWritingToFlash" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2066 2071]))                  
+                :type "void")
+                nil [2003 2744])
+            ("test_SRRLoggingManager_LogBNSTick" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2836 2841]))                  
+                :type "void")
+                nil [2797 3149])
+            ("test_SRRLoggingManager_ClearActivityLoggingData" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3204 3209]))                  
+                :type "void")
+                nil [3151 3493])
+            ("test_SRRLoggingManager_ResetActivityMonitorDataAfterReading" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3560 3565]))                  
+                :type "void")
+                nil [3495 3784])
+            ("test_SRRLoggingManager_GetActivityLogAddressInRAMMemory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3847 3852]))                  
+                :type "void")
+                nil [3786 4403]))          
+    :file "test_MAT_LoggingManager.c"
+    :pointmax 4403
+    :fsize 4543
+    :lastmodtime '(20458 6512)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_MAT_FlashAdapter.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRTypes.h" include nil nil [2 23])
+            ("SRRFlashAdapter.h" include nil nil [24 52])
+            ("unity.h" include nil nil [53 71])
+            ("SRRLoggingManager.h" include nil nil [73 103])
+            ("SRRConfigurationDataStorage.h" include nil nil [104 144])
+            ("SRRFCAInterfaceManager.h" include nil nil [145 180])
+            ("csi_common.h" include nil nil [181 204])
+            ("uart_cc430.h" include nil nil [205 228])
+            ("uart_intfc_cc430.h" include nil nil [230 259])
+            ("SRRInterruptServiceEngine.h" include nil nil [260 298])
+            ("SRRLEDButtonManager.h" include nil nil [299 331])
+            ("SRRBeaconProcessingManager.h" include nil nil [332 371])
+            ("SRRBatteryMonitor.h" include nil nil [372 402])
+            ("SRREventReceptor.h" include nil nil [403 432])
+            ("SRRMainprocessingEngine.h" include nil nil [433 469])
+            ("ACTIVITY_NO_DATA" variable (:constant-flag t) nil [479 495])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [538 543]))                  
+                :type "void")
+                nil [527 614])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [630 635]))                  
+                :type "void")
+                nil [616 639])
+            ("test_SRRFlashAdapter_EraseActivityDataInFlashMemory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [727 732]))                  
+                :type "void")
+                nil [670 1076])
+            ("setupWithDataInFlashMemory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1110 1115]))                  
+                :type "void")
+                nil [1078 1305])
+            ("test_SRRFlashAdapter_StoreActivity" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1347 1352]))                  
+                :type "void")
+                nil [1307 1527])
+            ("test_SRRFlashAdapter_Initialize_ExpectedEmpty" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1580 1585]))                  
+                :type "void")
+                nil [1529 1884])
+            ("test_SRRFlashAdapter_Initialize_ExpectData" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1934 1939]))                  
+                :type "void")
+                nil [1886 2085])
+            ("test_SRRFlashAdapter_EraseDataInFlashMemory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2136 2141]))                  
+                :type "void")
+                nil [2087 2362])
+            ("test_SRRFlashAdapter_GetFlashFull" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2403 2408]))                  
+                :type "void")
+                nil [2364 2611])
+            ("test_SRRFlashAdapter_GetSizeOfActivityLogInFlash" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2667 2672]))                  
+                :type "void")
+                nil [2613 2926])
+            ("test_SRRFlashAdapter_GetActivityLogAddressInFlashMemory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2990 2995]))                  
+                :type "void")
+                nil [2929 3126])
+            ("test_SRRFlashAdapter_InitTestingAMData_zeroByte" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3182 3187]))                  
+                :type "void")
+                nil [3129 3449])
+            ("test_SRRFlashAdapter_InitTestingAMData_RAMOnly" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3503 3508]))                  
+                :type "void")
+                nil [3451 4008])
+            ("test_SRRFlashAdapter_InitTestingAMData_RAMAndFlash" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4066 4071]))                  
+                :type "void")
+                nil [4010 4584])
+            ("test_SRRFlashAdapter_EraseDataAfterSRRReset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4636 4641]))                  
+                :type "void")
+                nil [4587 4937]))          
+    :file "test_MAT_FlashAdapter.c"
+    :pointmax 4937
+    :fsize 5101
+    :lastmodtime '(20458 25000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ACTIVITY_NO_DATA" . ((number "0x0" 496 . 499)))
+          )
+
+    )
+   (semanticdb-table "test_MAT_FCAMsg.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRTypes.h" include nil nil [2 23])
+            ("SRRFlashAdapter.h" include nil nil [24 52])
+            ("unity.h" include nil nil [53 71])
+            ("SRRLoggingManager.h" include nil nil [72 102])
+            ("SRRConfigurationDataStorage.h" include nil nil [103 143])
+            ("SRRFCAInterfaceManager.h" include nil nil [144 179])
+            ("csi_common.h" include nil nil [180 203])
+            ("uart_cc430.h" include nil nil [204 227])
+            ("uart_intfc_cc430.h" include nil nil [229 258])
+            ("SRRInterruptServiceEngine.h" include nil nil [259 297])
+            ("SRRLEDButtonManager.h" include nil nil [298 330])
+            ("SRRBeaconProcessingManager.h" include nil nil [331 370])
+            ("SRRBatteryMonitor.h" include nil nil [371 401])
+            ("SRREventReceptor.h" include nil nil [402 431])
+            ("SRRFCAMsg.h" include nil nil [432 454])
+            ("SRRAccel.h" include nil nil [455 476])
+            ("io_i2c.h" include nil nil [477 496])
+            ("acc_adxl346.h" include nil nil [497 521])
+            ("SRRMainprocessingEngine.h" include nil nil [522 558])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [571 576]))                  
+                :type "void")
+                nil [560 613])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [629 634]))                  
+                :type "void")
+                nil [615 638])
+            ("test_SRRFCAMsg_DisableAMFeature" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [692 697]))                  
+                :type "void")
+                nil [655 887]))          
+    :file "test_MAT_FCAMsg.c"
+    :pointmax 888
+    :fsize 926
+    :lastmodtime '(20458 6512)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_MAT_DataConfiguration.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRTypes.h" include nil nil [3 24])
+            ("SRRFlashAdapter.h" include nil nil [25 53])
+            ("unity.h" include nil nil [54 72])
+            ("SRRLoggingManager.h" include nil nil [73 103])
+            ("SRRConfigurationDataStorage.h" include nil nil [104 144])
+            ("SRRFCAInterfaceManager.h" include nil nil [145 180])
+            ("csi_common.h" include nil nil [181 204])
+            ("uart_cc430.h" include nil nil [205 228])
+            ("uart_intfc_cc430.h" include nil nil [230 259])
+            ("SRRInterruptServiceEngine.h" include nil nil [260 298])
+            ("SRRLEDButtonManager.h" include nil nil [299 331])
+            ("SRRBeaconProcessingManager.h" include nil nil [332 371])
+            ("SRRBatteryMonitor.h" include nil nil [372 402])
+            ("SRREventReceptor.h" include nil nil [403 432])
+            ("SRRFCAMsg.h" include nil nil [433 455])
+            ("SRRAccel.h" include nil nil [456 477])
+            ("io_i2c.h" include nil nil [478 497])
+            ("acc_adxl346.h" include nil nil [498 522])
+            ("SRRMainprocessingEngine.h" include nil nil [523 559])
+            ("setUp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [598 603]))                  
+                :type "void")
+                nil [587 640])
+            ("tearDown" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [656 661]))                  
+                :type "void")
+                nil [642 665])
+            ("test_SRRConfigurationDataStorage_initlizeDefaultActivityThreshold" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [765 770]))                  
+                :type "void")
+                nil [694 1792]))          
+    :file "test_MAT_DataConfiguration.c"
+    :pointmax 1792
+    :fsize 1840
+    :lastmodtime '(20458 6512)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Users!kchimala!main!client!fido!10-CA024-P1!ftd_srr!test!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

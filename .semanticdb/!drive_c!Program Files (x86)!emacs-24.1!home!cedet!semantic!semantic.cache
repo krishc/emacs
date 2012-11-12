@@ -1,0 +1,232 @@
+;; Object semantic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semantic/"
+  :tables (list 
+   (semanticdb-table "semantic.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("semantic-version" variable (:default-value "2.1") nil [1439 1505])
+            ("working" include nil nil [1508 1526])
+            ("assoc" include nil nil [1527 1543])
+            ("semantic-tag-ls" include nil nil [1544 1570])
+            ("semantic-lex" include nil nil [1571 1594])
+            ("inversion" include nil nil [1595 1615])
+            ("semantic-require-version" function (:arguments ("major" "minor" "beta")) nil [1617 2172])
+            ("semantic" customgroup (:user-visible-flag t) nil [2174 2256])
+            ("semantic-faces" customgroup (:user-visible-flag t) nil [2258 2349])
+            ("semantic-fw" include nil nil [2351 2373])
+            ("semantic--parse-table" variable nil nil [2424 2619])
+            ("make-variable-buffer-local" code nil nil [2620 2671])
+            ("semantic-varalias-obsolete" code nil nil [2672 2762])
+            ("semantic-symbol->name-assoc-list" variable (:default-value (quote ((type . "Types") (variable . "Variables") (function . "Functions") (include . "Dependencies") (package . "Provides")))) nil [2764 3303])
+            ("make-variable-buffer-local" code nil nil [3304 3366])
+            ("semantic-symbol->name-assoc-list-for-type-parts" variable nil nil [3368 3802])
+            ("make-variable-buffer-local" code nil nil [3803 3880])
+            ("semantic-case-fold" variable nil nil [3882 3960])
+            ("make-variable-buffer-local" code nil nil [3961 4009])
+            ("semantic-expand-nonterminal" variable nil nil [4011 4503])
+            ("make-variable-buffer-local" code nil nil [4504 4561])
+            ("semantic--buffer-cache" variable nil nil [4563 4976])
+            ("make-variable-buffer-local" code nil nil [4977 5029])
+            ("semantic-varalias-obsolete" code nil nil [5030 5121])
+            ("semantic-unmatched-syntax-cache" variable nil nil [5123 5213])
+            ("make-variable-buffer-local" code nil nil [5214 5275])
+            ("semantic-unmatched-syntax-cache-check" variable nil nil [5277 5434])
+            ("make-variable-buffer-local" code nil nil [5435 5502])
+            ("semantic-edits-are-safe" variable nil nil [5504 5854])
+            ("semantic-unmatched-syntax-hook" variable nil nil [5856 6481])
+            ("semantic--before-fetch-tags-hook" variable nil nil [6483 6781])
+            ("semantic-varalias-obsolete" code nil nil [6782 6893])
+            ("semantic-after-toplevel-bovinate-hook" variable nil nil [6895 7254])
+            ("make-obsolete-variable" code nil nil [7255 7322])
+            ("semantic-after-toplevel-cache-change-hook" variable nil nil [7324 7764])
+            ("semantic-before-toplevel-cache-flush-hook" variable nil nil [7766 8116])
+            ("semantic-dump-parse" variable nil nil [8118 8233])
+            ("semantic-parser-name" variable (:default-value "LL") nil [8235 8329])
+            ("make-variable-buffer-local" code nil nil [8330 8380])
+            ("semantic-parse-tree-state" variable (:default-value (quote needs-rebuild)) nil [8422 8508])
+            ("make-variable-buffer-local" code nil nil [8509 8564])
+            ("semantic-parse-tree-unparseable" function nil nil [8566 8849])
+            ("semantic-parse-tree-unparseable-p" function nil nil [8851 9015])
+            ("semantic-parse-tree-set-needs-update" function nil nil [9017 9238])
+            ("semantic-parse-tree-needs-update-p" function nil nil [9240 9402])
+            ("semantic-parse-tree-set-needs-rebuild" function nil nil [9404 9627])
+            ("semantic-parse-tree-needs-rebuild-p" function nil nil [9629 9793])
+            ("semantic-parse-tree-set-up-to-date" function nil nil [9795 9939])
+            ("semantic-parse-tree-up-to-date-p" function nil nil [9941 10083])
+            ("semantic-inhibit-functions" variable nil nil [10120 10361])
+            ("semantic-init-hook" variable nil nil [10363 10458])
+            ("semantic-init-mode-hook" variable nil nil [10460 10560])
+            ("make-variable-buffer-local" code nil nil [10561 10614])
+            ("semantic-init-db-hook" variable nil nil [10616 10886])
+            ("semantic-varalias-obsolete" code nil nil [10888 10983])
+            ("semantic-varalias-obsolete" code nil nil [10984 11089])
+            ("semantic-varalias-obsolete" code nil nil [11090 11191])
+            ("semantic-new-buffer-fcn-was-run" variable nil nil [11193 11300])
+            ("make-variable-buffer-local" code nil nil [11301 11362])
+            ("semantic-active-p" function nil nil [11364 11494])
+            ("semantic--umatched-syntax-needs-refresh-p" function nil nil [11496 11781])
+            ("semantic-new-buffer-fcn" function nil nil [11783 13158])
+            ("add-hook" code nil nil [13160 13217])
+            ("semantic-fetch-tags-fast" function nil nil [13319 13563])
+            ("if" code nil nil [13565 13655])
+            ("condition-case" code nil nil [13703 13749])
+            ("semantic-edebug" variable nil nil [13752 13891])
+            ("semantic-elapsed-time" function (:arguments ("start" "end")) nil [13893 14195])
+            ("bovinate" function
+               (:user-visible-flag t
+                :arguments ("clear"))
+                nil [14197 14916])
+            ("semantic-parse-stream" function
+               (:overloadable t
+                :arguments ("stream" "nonterminal"))
+                nil [15025 15611])
+            ("semantic-parse-changes" function (:overloadable t) nil [15613 15860])
+            ("semantic-parse-region" function
+               (:overloadable t
+                :arguments ("start" "end" "nonterminal" "depth" "returnonerror"))
+                nil [15862 16690])
+            ("semantic-parse-region-default" function (:arguments ("start" "end" "nonterminal" "depth" "returnonerror")) nil [16707 17775])
+            ("semantic-set-unmatched-syntax-cache" function (:arguments ("unmatched-syntax")) nil [17803 18350])
+            ("semantic-clear-unmatched-syntax-cache" function nil nil [18352 18541])
+            ("semantic-unmatched-syntax-tokens" function nil nil [18543 19166])
+            ("semantic-clear-toplevel-cache" function (:user-visible-flag t) nil [19168 20144])
+            ("semantic--set-buffer-cache" function (:arguments ("tagtable")) nil [20146 20966])
+            ("semantic-working-type" variable
+               (:user-visible-flag t
+                :default-value (quote percent))
+                nil [20968 21171])
+            ("semantic-varalias-obsolete" code nil nil [21172 21264])
+            ("semantic-minimum-working-buffer-size" variable
+               (:user-visible-flag t
+                :default-value (* 1024 5))
+                nil [21266 21506])
+            ("semantic-parser-working-message" function (:arguments ("arg")) nil [21508 21856])
+            ("semantic-fetch-tags" function nil nil [22094 24929])
+            ("semantic-refresh-tags-safe" function nil nil [24946 26254])
+            ("semantic-bovinate-toplevel" function (:arguments ("ignored")) nil [26271 26386])
+            ("make-obsolete" code nil nil [26402 26466])
+            ("semantic-fetch-available-tags" function nil nil [26742 27182])
+            ("semantic-repeat-parse-whole-stream" function (:arguments ("stream" "nonterm" "returnonerror")) nil [27455 29575])
+            ("semantic-parser-warnings" variable nil nil [29851 29947])
+            ("make-variable-buffer-local" code nil nil [29948 30002])
+            ("semantic-clear-parser-warnings" function nil nil [30004 30146])
+            ("semantic-push-parser-warning" function (:arguments ("warning" "start" "end")) nil [30148 30371])
+            ("semantic-dump-parser-warnings" function (:user-visible-flag t) nil [30373 30692])
+            ("semantic-bovinate-region-until-error" function (:arguments ("start" "end" "nonterm" "depth")) nil [30884 31493])
+            ("make-obsolete" code nil nil [31494 31585])
+            ("semantic-bovinate-from-nonterminal" function (:arguments ("start" "end" "nonterm" "depth" "length")) nil [31587 32132])
+            ("semantic-bovinate-from-nonterminal-full" function (:arguments ("start" "end" "nonterm" "depth")) nil [32134 32710])
+            ("make-obsolete" code nil nil [32711 32805])
+            ("semantic" package nil nil [32807 32826])
+            ("semantic-util" include nil nil [32928 32952]))          
+    :file "semantic.el"
+    :pointmax 32980
+    :fsize 32979
+    :lastmodtime '(20362 59690)
+    :unmatched-syntax '((close-paren 13749 . 13750) (symbol 13683 . 13700) (open-paren 13682 . 13683) (close-paren 1505 . 1506) (symbol 1349 . 1365) (open-paren 1348 . 1349))
+    )
+   (semanticdb-table "semantic-tag-ls.el"
+    :file "semantic-tag-ls.el"
+    :fsize 16143
+    :lastmodtime '(20362 59691)
+    )
+   (semanticdb-table "semantic-lex.el"
+    :file "semantic-lex.el"
+    :fsize 83330
+    :lastmodtime '(20362 59690)
+    )
+   (semanticdb-table "semantic-fw.el"
+    :file "semantic-fw.el"
+    :fsize 22053
+    :lastmodtime '(20362 59690)
+    )
+   (semanticdb-table "semantic-util.el"
+    :file "semantic-util.el"
+    :fsize 12609
+    :lastmodtime '(20362 59690)
+    )
+   (semanticdb-table "semantic-ia.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("senator" include nil nil [1407 1425])
+            ("semantic-analyze" include nil nil [1426 1453])
+            ("pulse" include nil nil [1454 1470])
+            ("semantic-analyze" include nil nil [1492 1519])
+            ("semantic-analyze-refs" include nil nil [1522 1554])
+            ("semantic-ia-completion-format-tag-function" variable (:default-value (quote semantic-format-tag-prototype)) nil [1662 1874])
+            ("semantic-ia-insert-tag" function
+               (:overloadable t
+                :arguments ("tag"))
+                nil [2233 2352])
+            ("semantic-ia-insert-tag-default" function (:arguments ("tag")) nil [2354 2592])
+            ("defalias" code nil nil [2594 2773])
+            ("semantic-ia-get-completions-deprecated" function (:arguments ("context" "point")) nil [2775 3113])
+            ("semantic-ia-complete-symbol" function
+               (:user-visible-flag t
+                :arguments ("pos"))
+                nil [3130 5331])
+            ("semantic-ia-completion-menu-format-tag-function" variable
+               (:user-visible-flag t
+                :default-value (quote semantic-uml-concise-prototype-nonterminal))
+                nil [5333 5564])
+            ("semantic-ia-complete-symbol-menu" function
+               (:user-visible-flag t
+                :arguments ("point"))
+                nil [5581 6844])
+            ("semantic-ia-complete-tip" function
+               (:user-visible-flag t
+                :arguments ("point"))
+                nil [7011 7763])
+            ("semantic-ia-show-summary" function
+               (:user-visible-flag t
+                :arguments ("point"))
+                nil [7880 8395])
+            ("semantic-ia-show-variants" function
+               (:user-visible-flag t
+                :arguments ("point"))
+                nil [8478 9882])
+            ("semantic-ia--fast-jump-helper" function (:arguments ("dest")) nil [10073 11381])
+            ("semantic-ia-fast-jump" function
+               (:user-visible-flag t
+                :arguments ("point"))
+                nil [11398 13557])
+            ("semantic-ia-fast-mouse-jump" function
+               (:user-visible-flag t
+                :arguments ("evt"))
+                nil [13574 13899])
+            ("semantic-ia-show-doc" function
+               (:user-visible-flag t
+                :arguments ("point"))
+                nil [14072 15454])
+            ("semantic-ia-describe-class" function
+               (:user-visible-flag t
+                :arguments ("typename"))
+                nil [15471 17012])
+            ("semantic-ia" package nil nil [17014 17036]))          
+    :file "semantic-ia.el"
+    :pointmax 17067
+    :fsize 17066
+    :lastmodtime '(20362 59691)
+    :unmatched-syntax '((close-paren 1554 . 1555) (symbol 1472 . 1489) (open-paren 1471 . 1472))
+    )
+   (semanticdb-table "senator.el"
+    :file "senator.el"
+    :fsize 110575
+    :lastmodtime '(20362 59691)
+    )
+   (semanticdb-table "semantic-analyze.el"
+    :file "semantic-analyze.el"
+    :fsize 28459
+    :lastmodtime '(20362 59691)
+    )
+   (semanticdb-table "semantic-analyze-refs.el"
+    :file "semantic-analyze-refs.el"
+    :fsize 12184
+    :lastmodtime '(20362 59691)
+    )
+   )
+  :file "!drive_c!Program Files (x86)!emacs-24.1!home!cedet!semantic!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

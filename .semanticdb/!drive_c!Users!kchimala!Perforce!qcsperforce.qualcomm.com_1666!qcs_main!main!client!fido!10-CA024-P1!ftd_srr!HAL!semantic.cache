@@ -1,0 +1,193 @@
+;; Object HAL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "HAL/"
+  :tables (list 
+   (semanticdb-table "Project.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PROJECT_H" variable (:constant-flag t) nil [317 326])
+            ("cc430F5137.h" include nil nil [425 448])
+            ("stdio.h" include nil nil [449 467])
+            ("string.h" include nil nil [468 487])
+            ("RF1A.h" include nil nil [488 505])
+            ("hal_pmm.h" include nil nil [506 526])
+            ("../Drivers/uart_intfc_cc430.h" include nil nil [528 568])
+            ("../Drivers/Radio.h" include nil nil [569 598])
+            ("../Drivers/PIO.h" include nil nil [599 626])
+            ("PACKET_LEN" variable (:constant-flag t) nil [842 852])
+            ("RSSI_IDX" variable (:constant-flag t) nil [908 916])
+            ("CRC_LQI_IDX" variable (:constant-flag t) nil [981 992])
+            ("SEQ_IDX" variable (:constant-flag t) nil [1062 1069])
+            ("CRC_OK" variable (:constant-flag t) nil [1137 1143])
+            ("BEACON_SAMPLE_SIZE" variable (:constant-flag t) nil [1199 1217])
+            ("BEACON_SAMPLE_SEQ_OFF" variable (:constant-flag t) nil [1234 1255])
+            ("BEACON_SAMPLE_RSSI_OFF" variable (:constant-flag t) nil [1269 1291])
+            ("BEACON_SAMPLE_ERR_OFF" variable (:constant-flag t) nil [1304 1325])
+            ("BEACON_SAMPLE_MAX" variable (:constant-flag t) nil [1339 1356])
+            ("Timer_ISR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1682 1687]))                  
+                :type "void")
+                nil [1667 1688])
+            ("Radio_ISR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1704 1709]))                  
+                :type "void")
+                nil [1689 1710]))          
+    :file "Project.h"
+    :pointmax 1800
+    :fsize 1861
+    :lastmodtime '(20386 61940)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PROJECT_H")
+          ("SEQ_IDX" . ((semantic-list "(PACKET_LEN-1)" 1081 . 1095)))
+          ("PACKET_LEN" . ((semantic-list "(0x09)" 861 . 867)))
+          ("CRC_OK" . ((semantic-list "(BIT7)" 1156 . 1162)))
+          ("BEACON_SAMPLE_SIZE" . ((number "4" 1224 . 1225)))
+          ("BEACON_SAMPLE_SEQ_OFF" . ((number "0" 1259 . 1260)))
+          ("BEACON_SAMPLE_RSSI_OFF" . ((number "2" 1294 . 1295)))
+          ("BEACON_SAMPLE_ERR_OFF" . ((number "3" 1329 . 1330)))
+          ("CRC_LQI_IDX" . ((semantic-list "(PACKET_LEN+2)" 1000 . 1014)))
+          ("RSSI_IDX" . ((semantic-list "(PACKET_LEN+1)" 927 . 941)))
+          ("BEACON_SAMPLE_MAX" . ((number "24" 1364 . 1366)))
+          )
+
+    )
+   (semanticdb-table "RF1A.h"
+    :file "RF1A.h"
+    :fsize 2806
+    :lastmodtime '(20166 54626)
+    )
+   (semanticdb-table "hal_pmm.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__PMM" variable (:constant-flag t) nil [474 479])
+            ("PMM_STATUS_OK" variable (:constant-flag t) nil [489 502])
+            ("PMM_STATUS_ERROR" variable (:constant-flag t) nil [517 533])
+            ("SetVCore" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [808 828]))                  
+                :type "unsigned int")
+                nil [785 829])
+            ("SetVCoreUp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1166 1186]))                  
+                :type "unsigned int")
+                nil [1141 1187])
+            ("SetVCoreDown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1536 1556]))                  
+                :type "unsigned int")
+                nil [1509 1557])
+            ("SetClocks" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1574 1579]))                  
+                :type "void")
+                nil [1559 1580]))          
+    :file "hal_pmm.h"
+    :pointmax 1601
+    :fsize 1656
+    :lastmodtime '(20166 54626)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PMM_STATUS_OK" . ((number "0" 507 . 508)))
+          ("__PMM")
+          ("PMM_STATUS_ERROR" . ((number "1" 535 . 536)))
+          )
+
+    )
+   (semanticdb-table "options_cc430.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("OPTIONS_H" variable (:constant-flag t) nil [562 571])
+            ("RX_BUFFER_SIZE" variable (:constant-flag t) nil [918 932])
+            ("TX_BUFFER_SIZE" variable (:constant-flag t) nil [1001 1015])
+            ("UART_BAUD_RATE" variable (:constant-flag t) nil [1085 1099])
+            ("UART_FLOW_CONTROL" variable (:constant-flag t) nil [1119 1136])
+            ("UART_PARITY_MODE" variable (:constant-flag t) nil [1187 1203])
+            ("UART_STOP_BITS" variable (:constant-flag t) nil [1265 1279])
+            ("UART_LETTER" variable (:constant-flag t) nil [1841 1852])
+            ("UART_MODULE" variable (:constant-flag t) nil [1916 1927])
+            ("UART_TX_PORT_NUM" variable (:constant-flag t) nil [2238 2254])
+            ("UART_TX_BIT_NUM" variable (:constant-flag t) nil [2272 2287])
+            ("UART_RX_PORT_NUM" variable (:constant-flag t) nil [2306 2322])
+            ("UART_RX_BIT_NUM" variable (:constant-flag t) nil [2340 2355])
+            ("UART_CTS_PORT_NUM" variable (:constant-flag t) nil [2583 2600])
+            ("UART_CTS_BIT_NUM" variable (:constant-flag t) nil [2666 2682])
+            ("UART_RTS_PORT_NUM" variable (:constant-flag t) nil [2747 2764])
+            ("UART_RTS_BIT_NUM" variable (:constant-flag t) nil [2828 2844])
+            ("UART_NUMBER" variable (:constant-flag t) nil [2906 2917])
+            ("UART_LOCATION" variable (:constant-flag t) nil [2945 2958])
+            ("__bsp_ISTATE_T__" variable (:constant-flag t) nil [3006 3022])
+            ("__bsp_ENABLE_INTERRUPTS__" variable (:constant-flag t) nil [3058 3083])
+            ("__bsp_DISABLE_INTERRUPTS__" variable (:constant-flag t) nil [3121 3147])
+            ("__bsp_INTERRUPTS_ARE_ENABLED__" variable (:constant-flag t) nil [3185 3215])
+            ("__bsp_GET_ISTATE__" variable (:constant-flag t) nil [3256 3274])
+            ("__bsp_RESTORE_ISTATE__" variable (:constant-flag t) nil [3322 3344])
+            ("bspIState_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [3382 3420])
+            ("BSP_ENTER_CRITICAL_SECTION" variable (:constant-flag t) nil [3430 3456])
+            ("BSP_EXIT_CRITICAL_SECTION" variable (:constant-flag t) nil [3532 3557])
+            ("BSP_CRITICAL_STATEMENT" variable (:constant-flag t) nil [3598 3620])
+            ("st" variable (:constant-flag t) nil [3915 3917])
+            ("UCA0TXIE" variable (:constant-flag t) nil [3967 3975])
+            ("UCA0RXIE" variable (:constant-flag t) nil [4045 4053]))          
+    :file "options_cc430.h"
+    :pointmax 4122
+    :fsize 4214
+    :lastmodtime '(20166 54626)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__bsp_DISABLE_INTERRUPTS__" (spp-arg-list nil 3147 . 3149) . ((symbol "__disable_interrupt" 3155 . 3174) (semantic-list "()" 3174 . 3176)))
+          ("UART_PARITY_MODE" . ((symbol "UART_PARITY_EVEN" 1206 . 1222)))
+          ("BSP_ENTER_CRITICAL_SECTION" (spp-arg-list ("x") 3456 . 3459) . ((symbol "st" 3462 . 3464) (semantic-list "( x = __bsp_GET_ISTATE__(); __bsp_DISABLE_INTERRUPTS__(); )" 3464 . 3523)))
+          ("TX_BUFFER_SIZE" . ((number "512" 1017 . 1020)))
+          ("UART_LETTER" . ((symbol "A" 1859 . 1860)))
+          ("__bsp_GET_ISTATE__" (spp-arg-list nil 3274 . 3276) . ((symbol "__get_interrupt_state" 3290 . 3311) (semantic-list "()" 3311 . 3313)))
+          ("UCA0RXIE" . ((semantic-list "(0x0001u)" 4067 . 4076)))
+          ("UART_MODULE" . ((number "0" 1934 . 1935)))
+          ("UART_TX_PORT_NUM" . ((number "1" 2256 . 2257)))
+          ("UART_CTS_BIT_NUM" . ((number "7" 2684 . 2685)))
+          ("UART_NUMBER" . ((symbol "UART_LETTER" 2922 . 2933)))
+          ("UART_LOCATION" . ((symbol "UART_MODULE" 2961 . 2972)))
+          ("__bsp_ENABLE_INTERRUPTS__" (spp-arg-list nil 3083 . 3085) . ((symbol "__enable_interrupt" 3092 . 3110) (semantic-list "()" 3110 . 3112)))
+          ("__bsp_INTERRUPTS_ARE_ENABLED__" (spp-arg-list nil 3215 . 3217) . ((semantic-list "(__get_SR_register() & GIE)" 3219 . 3246)))
+          ("BSP_CRITICAL_STATEMENT" (spp-arg-list ("x") 3620 . 3623) . ((symbol "st" 3630 . 3632) (semantic-list "( bspIState_t s;                    \\
+                                            BSP_ENTER_CRITICAL_SECTION(s);    \\
+                                            x;                                \\
+                                            BSP_EXIT_CRITICAL_SECTION(s); )" 3632 . 3905)))
+          ("UCA0TXIE" . ((semantic-list "(0x0002u)" 3989 . 3998)))
+          ("UART_BAUD_RATE" . ((number "115200" 1104 . 1110)))
+          ("UART_RX_BIT_NUM" . ((number "6" 2358 . 2359)))
+          ("st" (spp-arg-list ("x") 3917 . 3920) . 
+              ((DO "do" 3926 . 3928) (semantic-list "{ x }" 3929 . 3934) (WHILE "while" 3935 . 3940) (semantic-list "(__LINE__ == -1)" 3941 . 3957)))
+          ("BSP_EXIT_CRITICAL_SECTION" (spp-arg-list ("x") 3557 . 3560) . ((symbol "__bsp_RESTORE_ISTATE__" 3564 . 3586) (semantic-list "(x)" 3586 . 3589)))
+          ("OPTIONS_H")
+          ("UART_RTS_BIT_NUM" . ((number "6" 2846 . 2847)))
+          ("__bsp_ISTATE_T__" . ((UNSIGNED "unsigned" 3034 . 3042) (SHORT "short" 3043 . 3048)))
+          ("UART_STOP_BITS" . ((symbol "UART_2_STOP_BITS" 1284 . 1300)))
+          ("UART_CTS_PORT_NUM" . ((number "2" 2601 . 2602)))
+          ("RX_BUFFER_SIZE" . ((number "64" 935 . 937)))
+          ("UART_FLOW_CONTROL" . ((symbol "UART_FLOW_CONTROL_OFF" 1138 . 1159)))
+          ("UART_RX_PORT_NUM" . ((number "1" 2324 . 2325)))
+          ("UART_RTS_PORT_NUM" . ((number "2" 2765 . 2766)))
+          ("__bsp_RESTORE_ISTATE__" (spp-arg-list ("x") 3344 . 3347) . ((symbol "__set_interrupt_state" 3356 . 3377) (semantic-list "(x)" 3377 . 3380)))
+          ("UART_TX_BIT_NUM" . ((number "5" 2290 . 2291)))
+          )
+
+    )
+   )
+  :file "!drive_c!Users!kchimala!Perforce!qcsperforce.qualcomm.com_1666!qcs_main!main!client!fido!10-CA024-P1!ftd_srr!HAL!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

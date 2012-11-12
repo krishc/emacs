@@ -1,0 +1,907 @@
+;; Object AppLayer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AppLayer/"
+  :tables (list 
+   (semanticdb-table "SRRFCAInterfaceManager.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRFCAInterfaceManager.h" include nil nil [868 903])
+            ("SRRTypes.h" include nil nil [904 925])
+            ("csi_common.h" include nil nil [926 949])
+            ("SRRFCAMsg.h" include nil nil [950 972])
+            ("SRRError.h" include nil nil [973 994])
+            ("uart_intfc_cc430.h" include nil nil [995 1024])
+            ("SRRLEDButtonManager.h" include nil nil [1025 1057])
+            ("SRRInterruptServiceEngine.h" include nil nil [1058 1096])
+            ("SRRBeaconProcessingManager.h" include nil nil [1097 1136])
+            ("SRRFCAInterfaceManager_GetInfoReqTimeout" variable
+               (:constant-flag t
+                :type ("MillisecondsType" type (:type "class") nil nil))
+                nil [1519 1603])
+            ("SRRFCAInterfaceManager_WakeQSCTimerId" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) nil [1811 1927])
+            ("SRRFCAInterfaceManager_GetInfoReqTimerId" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) nil [1928 2047])
+            ("SRRFCAInterfaceManager_DoWakeQSC" variable (:type "bool") nil [2161 2238])
+            ("SRRFCAInterfaceManager_Statemask" variable (:type ("uint16" type (:type "class") nil nil)) nil [2242 2319])
+            ("SRRFCAInterfaceManager_Eventmask" variable (:type ("uint16" type (:type "class") nil nil)) nil [2320 2397])
+            ("SRRFCAInterfaceManager_OnDemandCount" variable (:type ("uint8" type (:type "class") nil nil)) nil [2398 2475])
+            ("SRRFCAInterfaceManager_ACPowerLossCount" variable (:type ("uint8" type (:type "class") nil nil)) nil [2476 2556])
+            ("SRRFIM_OldSatemask" variable (:type ("uint16" type (:type "class") nil nil)) nil [2558 2615])
+            ("Srrfim_Oldeventmask" variable (:type ("Uint16" type (:type "class") nil nil)) nil [2616 2674])
+            ("Srrfim_Oldondemandcount" variable (:type ("Uint8" type (:type "class") nil nil)) nil [2675 2737])
+            ("SRRFIM_OldACPowerLossCount" variable (:type ("uint8" type (:type "class") nil nil)) nil [2738 2805])
+            ("SRRISE_QSCPowerState" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [2807 2840])
+            ("SRRFCAInterfaceManager_ResetQSCWakeUpTimer" function
+               (:prototype-flag t
+                :type "void")
+                nil [3253 3303])
+            ("SRRFCAInterfaceManager_WakeQSCTimerExpiredCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3362 3401]))                  
+                :type "void")
+                nil [3304 3402])
+            ("SRRFCAInterfaceManager_GetInfoReqTimerExpiredCallBack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3464 3503]))                  
+                :type "void")
+                nil [3403 3504])
+            ("SRRFCAInterfaceManager_SendGetInfoNotification" function
+               (:prototype-flag t
+                :type "void")
+                nil [3506 3560])
+            ("SRRFCAInterfaceManager_SetStateDoNotSendNotification" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ind" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3619 3630])
+                    ("mask" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3630 3642]))                  
+                :type "void")
+                nil [3561 3643])
+            ("SRRFCAInterfaceManger_DoStateDiff" function
+               (:prototype-flag t
+                :type "bool")
+                nil [3644 3685])
+            ("SRRFCAInterfaceManager_Initialize" function (:type "bool") nil [4200 4612])
+            ("SRRFCAInterfaceManager_MainLoopProcessing" function (:type "void") nil [5104 5397])
+            ("SRRFCAInterfaceManager_FBCFlagsStateChangeInd" function
+               (:arguments 
+                  ( ("fbcFlagBits" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6073 6094])
+                    ("fbcMaskBits" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6095 6116])
+                    ("fbcId" variable (:type ("SRRTypes_FBCIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6117 6143]))                  
+                :type "void")
+                nil [6020 6216])
+            ("SRRFCAInterfaceManager_SetResetEvent" function
+               (:typemodifiers ("inline")
+                :type "void")
+                nil [6293 6411])
+            ("SRRFCAInterfaceManager_FBCFlagsStateChangeDoNotSendNotification" function
+               (:arguments 
+                  ( ("fbcFlagBits" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7579 7600])
+                    ("fbcMaskBits" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7603 7624])
+                    ("fbcId" variable (:type ("SRRTypes_FBCIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7625 7651]))                  
+                :type "void")
+                nil [7508 7742])
+            ("SRRFCAInterfaceManager_WakeQSC" function (:type "void") nil [8203 8552])
+            ("SRRFCAInterfaceManager_WakeQSCTimerExpiredCallBack" function
+               (:arguments 
+                  ( ("tid" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8977 9016]))                  
+                :type "void")
+                nil [8919 9644])
+            ("SRRFCAInterfaceManager_OnDemandLocateCounterChangeInd" function
+               (:arguments 
+                  ( ("onDemandLocateCounterValue" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10361 10393])
+                    ("fbcId" variable (:type ("SRRTypes_FBCIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10394 10420]))                  
+                :type "void")
+                nil [10300 10553])
+            ("SRRFCAInterfaceManager_ACPowerLossCounterChangeInd" function
+               (:arguments 
+                  ( ("acPowerLossCounterValue" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11335 11364])
+                    ("fbcId" variable (:type ("SRRTypes_FBCIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11365 11391]))                  
+                :type "void")
+                nil [11277 11586])
+            ("SRRFCAInterfaceManager_SecurityButtonStateChangeInd" function
+               (:arguments 
+                  ( ("securityButtonState" variable (:type ("SRRTYPES_SecurityButtonStateType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12070 12124]))                  
+                :type "bool")
+                nil [12011 12916])
+            ("SRRFCAInterfaceManager_BeaconFenceStateChangeInd" function
+               (:arguments 
+                  ( ("beaconFenceState" variable (:type ("SRRTYPES_BeaconFenceStateType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13315 13363])
+                    ("fbcId" variable (:type ("SRRTypes_FBCIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13364 13402]))                  
+                :type "bool")
+                nil [13259 13863])
+            ("SRRFCAInterfaceManager_WalkButtonPressInd" function
+               (:arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [14248 14260]))                  
+                :type "bool")
+                nil [14200 15247])
+            ("SRRFCAInterfaceManager_ChangePowerState" function
+               (:arguments 
+                  ( ("powerIsOn" variable (:type "bool") (reparse-symbol arg-sub-list) [15628 15644]))                  
+                :type "bool")
+                nil [15582 16285])
+            ("SRRFCAInterfaceManager_LogBufferFullInd" function (:type "bool") nil [16621 17038])
+            ("SRRFCAInterfaceManager_ClearLogBufferFullInd" function (:type "bool") nil [17377 17676])
+            ("SRRFCAInterfaceManager_SetStateInd" function
+               (:arguments 
+                  ( ("ind" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18045 18056])
+                    ("mask" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18097 18109]))                  
+                :type "void")
+                nil [18005 18556])
+            ("SRRFCAInterfaceManager_SetStateDoNotSendNotification" function
+               (:arguments 
+                  ( ("ind" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18961 18972])
+                    ("mask" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19031 19043]))                  
+                :type "void")
+                nil [18903 19311])
+            ("SRRFCAInterfaceManager_SaveState" function (:type "void") nil [19313 19609])
+            ("SRRFCAInterfaceManger_DoStateDiff" function (:type "bool") nil [19611 19951])
+            ("SRRFCAInterfaceManager_GetStateMask" function (:type ("uint16" type (:type "class") nil nil)) nil [20279 20493])
+            ("SRRFCAInterfaceManager_GetAndClearEventMask" function (:type ("uint16" type (:type "class") nil nil)) nil [20833 21056])
+            ("SRRFCAInterfaceManager_GetOnDemandCount" function (:type ("uint8" type (:type "class") nil nil)) nil [21392 21715])
+            ("SRRFCAInterfaceManager_GetACPowerLossCount" function (:type ("uint8" type (:type "class") nil nil)) nil [22052 22222])
+            ("SRRFCAInterfaceManager_SetQSCWakeUpTimerReq" function
+               (:arguments 
+                  ( ("seconds" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22609 22624]))                  
+                :type "void")
+                nil [22560 23263])
+            ("SRRFCAInterfaceManager_ResetQSCWakeUpTimer" function (:type "void") nil [23600 24231])
+            ("SRRFCAInterfaceManager_PowerDown" function (:type "void") nil [24551 25924])
+            ("SRRFCAInterfaceManager_SetFTDLowVoltageFlag" function
+               (:arguments 
+                  ( ("ftdVoltageIsLow" variable (:type "bool") (reparse-symbol arg-sub-list) [26367 26389]))                  
+                :type "void")
+                nil [26316 26655])
+            ("SRRFCAInterfaceManager_GetInfoReqTimerExpiredCallBack" function
+               (:arguments 
+                  ( ("tid" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27179 27218]))                  
+                :type "void")
+                nil [27118 27839])
+            ("SRRFCAInterfaceManager_ClearGetInfoReqTimer" function (:type "void") nil [28298 28842])
+            ("SRRFCAInterfaceManager_GetSRRPowerState" function (:type "bool") nil [29309 29498])
+            ("SRRFCAInterfaceManager_SendGetInfoNotification" function (:type "void") nil [30073 31341]))          
+    :file "SRRFCAInterfaceManager.c"
+    :pointmax 31415
+    :fsize 32415
+    :lastmodtime '(20456 57284)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SRRFCAInterfaceManager.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "SRRFCAInterfaceManager.h"
+    :pointmax 13861
+    :fsize 14328
+    :lastmodtime '(20447 47401)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SRRTypes.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRTYPES_H" variable (:constant-flag t) nil [322 332])
+            ("byte" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1050 1079])
+            ("word8" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1110 1140])
+            ("word16" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1170 1201])
+            ("uint8" variable (:constant-flag t) nil [1239 1244])
+            ("uint16" variable (:constant-flag t) nil [1259 1265])
+            ("uint32" variable (:constant-flag t) nil [1281 1287])
+            ("SIGNED_INT8" variable (:constant-flag t) nil [1324 1335])
+            ("int8" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [1336 1365])
+            ("SIGNED_INT16" variable (:constant-flag t) nil [1429 1441])
+            ("int16" type
+               (:typedef ("short")
+                :superclasses "short"
+                :type "typedef")
+                nil [1442 1472])
+            ("SIGNED_INT32" variable (:constant-flag t) nil [1536 1548])
+            ("int32" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [1549 1579])
+            ("word32" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [1699 1730])
+            ("word64" type
+               (:typedef ("unsigned long long")
+                :superclasses "unsigned long long"
+                :type "typedef")
+                nil [1855 1889])
+            ("word" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1926 1955])
+            ("float64" type
+               (:typedef ("double")
+                :superclasses "double"
+                :type "typedef")
+                nil [1992 2024])
+            ("VoidFuncPtrType" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [2228 2254])
+            ("MillisecondsType" type
+               (:typedef ("word32" type (:type "class") nil nil)
+                :superclasses "word32"
+                :type "typedef")
+                nil [2420 2452])
+            ("MicrosecondsType" type
+               (:typedef ("word16" type (:type "class") nil nil)
+                :superclasses "word16"
+                :type "typedef")
+                nil [2453 2485])
+            ("stddef.h" include (:system-flag t) nil [2670 2689])
+            ("bool" variable (:constant-flag t) nil [2801 2805])
+            ("true" variable (:constant-flag t) nil [2840 2844])
+            ("false" variable (:constant-flag t) nil [2855 2860])
+            ("SRRTypes_FBCIdType" type
+               (:typedef ("word32" type (:type "class") nil nil)
+                :superclasses "word32"
+                :type "typedef")
+                nil [3058 3092])
+            ("SRRBatt_BattStateMachineType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRBATT_UNINITIALIZED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3111 3133])
+                          ("SRRBATT_VOLTAGE_GOOD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3136 3157])
+                          ("SRRBATT_VOLTAGE_LOW" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3160 3180])
+                          ("SRRBATT_VOLTAGE_CRITICAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3183 3208])
+                          ("SRRBATT_CHARGING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3211 3228])
+                          ("SRRBATT_NUMBER_OF_STATES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3231 3257]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3094 3287])
+            ("SRRMain_PowerStateType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRMAIN_SRR_OFF" variable
+                             (:constant-flag t
+                              :default-value (3326 3327)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3308 3327])
+                          ("SRRMAIN_POWER_OFF_SENT_TO_FCA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3333 3364])
+                          ("SRRMAIN_SRR_ON" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3369 3387]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3289 3410])
+            ("SRRTYPES_BeaconFenceStateType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRTYPES_OUTSIDE_BEACON_FENCE" variable
+                             (:constant-flag t
+                              :default-value (3461 3462)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3431 3462])
+                          ("SRRTYPES_INSIDE_BEACON_FENCE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3467 3496])
+                          ("SRRTYPES_NUMBER_OF_BEACON_FENCE_STATES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3500 3540]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3412 3571])
+            ("SRRTYPES_GeofenceStateType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRTYPES_OUTSIDE_GEOFENCE" variable
+                             (:constant-flag t
+                              :default-value (3617 3618)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3591 3618])
+                          ("SRRTYPES_INSIDE_GEOFENCE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3623 3648])
+                          ("SRRTYPES_AMBIGUOUS_STATE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3652 3677])
+                          ("SRRTYPES_NUMBER_OF_GEOFENCE_STATES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3681 3717]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3573 3745])
+            ("SRRTYPES_SecurityButtonStateType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRTYPES_FTD_DETACHED" variable
+                             (:constant-flag t
+                              :default-value (3788 3789)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3766 3789])
+                          ("SRRTYPES_FTD_ATTACHED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3794 3816])
+                          ("SRRTYPES_NUMBER_OF_SECURITY_BUTTON_STATES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3820 3863]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3747 3897])
+            ("SRREvent_EventType" variable (:constant-flag t) nil [3964 3982]))          
+    :file "SRRTypes.h"
+    :pointmax 4622
+    :fsize 4792
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax '((TYPEDEF 2220 . 2227))
+    :lexical-table 
+        '(("SRRTYPES_H")
+          ("false" . ((number "0" 2861 . 2862)))
+          ("SIGNED_INT16")
+          ("uint8" . ((symbol "word8" 1245 . 1250)))
+          ("SIGNED_INT8")
+          ("bool" . ((UNSIGNED "unsigned" 2806 . 2814) (CHAR "char" 2815 . 2819)))
+          ("SIGNED_INT32")
+          ("uint16" . ((symbol "word16" 1266 . 1272)))
+          ("SRREvent_EventType" . ((symbol "srr_fca_event_type" 3983 . 4001)))
+          ("uint32" . ((symbol "word32" 1288 . 1294)))
+          ("true" . ((number "1" 2845 . 2846)))
+          )
+
+    )
+   (semanticdb-table "SRRError.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRERROR_H" variable (:constant-flag t) nil [319 329])
+            ("SRRTypes.h" include nil nil [896 917])
+            ("SRRERROR_ErrorType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRERROR_STARTUP_ERROR" variable
+                             (:constant-flag t
+                              :default-value (1147 1148)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1122 1148])
+                          ("SRRERROR_HARDWARE_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1153 1177])
+                          ("SRRERROR_SOFTWARE_ERROR_WARNING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1181 1213])
+                          ("SRRERROR_SOFTWARE_ERROR_MINOR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1217 1247])
+                          ("SRRERROR_SOFTWARE_ERROR_CRITICAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1251 1284])
+                          ("SRRERROR_NUMBER_OF_ERROR_TYPES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1288 1320]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1104 1340])
+            ("SRRERROR_ErrorIDType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SRRERROR_SRRBPM_1" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1360 1378])
+                          ("SRRERROR_SRRBPM_2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1382 1400])
+                          ("SRRERROR_SRRBPM_3" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1404 1422])
+                          ("SRRERROR_SRRBPM_4" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1426 1444])
+                          ("SRRERROR_SRRBPM_5" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1448 1466])
+                          ("SRRERROR_SRRBPM_6" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1470 1488])
+                          ("SRRERROR_SRRBPM_7" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1492 1510])
+                          ("SRRERROR_SRRBPM_8" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1514 1532])
+                          ("SRRERROR_SRRBPM_9" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1536 1554])
+                          ("SRRERROR_SRRBPM_10" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1558 1577])
+                          ("SRRERROR_SRRBPM_11" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1581 1600])
+                          ("SRRERROR_SRRBPM_12" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1604 1623])
+                          ("SRRERROR_SRRBPM_13" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1627 1646])
+                          ("SRRERROR_SRRBPM_14" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1650 1669])
+                          ("SRRERROR_SRRBPM_15" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1673 1692])
+                          ("SRRERROR_SRRBPM_16" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1696 1715])
+                          ("SRRERROR_SRRBPM_17" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1719 1738])
+                          ("SRRERROR_SRRBPM_18" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1742 1761])
+                          ("SRRERROR_SRRBPM_19" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1765 1784])
+                          ("SRRERROR_SRRBPM_20" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1788 1807])
+                          ("SRRERROR_SRRBPM_21" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1811 1830])
+                          ("SRRERROR_SRRBPM_22" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1834 1853])
+                          ("SRRERROR_SRRFCA_23" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1857 1876])
+                          ("SRRERROR_SRRMPE_24" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1880 1899])
+                          ("SRRERROR_SRRFCA_25" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1903 1922])
+                          ("SRRERROR_SRRFCA_26" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1926 1945])
+                          ("SRRERROR_SRRBPM_27" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1949 1968])
+                          ("SRRERROR_NUMBER_OF_ERROR_IDS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1972 2002]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1342 2024])
+            ("SRRError_ReportError" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("errorType" variable (:type ("SRRERROR_ErrorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2580 2614])
+                    ("errorId" variable (:type ("SRRERROR_ErrorIDType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2618 2651]))                  
+                :type "void")
+                nil [2549 2652]))          
+    :file "SRRError.h"
+    :pointmax 2694
+    :fsize 2796
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SRRERROR_H")
+          )
+
+    )
+   (semanticdb-table "SRRLEDButtonManager.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRLEDBUTTONMANAGER_H" variable (:constant-flag t) nil [344 365])
+            ("TOTALLEDSTATES" variable (:constant-flag t) nil [838 852])
+            ("SRRLEDButtonManager_POWER_LED_OFF_TIME" variable (:constant-flag t) nil [1262 1300])
+            ("SRRTypes.h" include nil nil [2050 2071])
+            ("LEDColors" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("OFF" variable
+                             (:constant-flag t
+                              :default-value (2280 2281)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2276 2281])
+                          ("RED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2285 2289])
+                          ("BLUE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2292 2297])
+                          ("REDANDBLUE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2300 2312]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2259 2322])
+            ("SRRLED_Pattern" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("NumOfColors" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2344 2362])
+                          ("LEDTime" variable
+                             (:dereference 1
+                              :type ("uint8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2365 2395])
+                          ("LEDColor" variable
+                             (:dereference 1
+                              :type ("LEDColors" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2398 2433]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2325 2450])
+            ("SRRLEDButtonManager_Initialize" function
+               (:prototype-flag t
+                :type "bool")
+                nil [3178 3216])
+            ("SRRLEDButtonManager_SetLEDPattern" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pattern" variable
+                       (:pointer 1
+                        :type ("SRRLED_Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3601 3625])
+                    ("totalPatternTime" variable (:type ("word32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3626 3650]))                  
+                :type "void")
+                nil [3562 3651])
+            ("SRRLEDButtonManager_OnDemandLocateStateChangeInd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("onDemandLocateBitIsSet" variable (:type "bool") (reparse-symbol arg-sub-list) [4373 4402]))                  
+                :type "void")
+                nil [4314 4403])
+            ("SRRLEDButtonManager_MainLoopProcessing" function
+               (:prototype-flag t
+                :type "void")
+                nil [4854 4900])
+            ("SRRLEDButtonManager_InitiatePowerOff" function
+               (:prototype-flag t
+                :type "void")
+                nil [4902 4946])
+            ("SRRLEDButtonManager_TurnOnQSC" function
+               (:prototype-flag t
+                :type "void")
+                nil [4948 4985])
+            ("SRRLEDButtonManager_SignalQSC" function
+               (:prototype-flag t
+                :type "void")
+                nil [4986 5023])
+            ("SRRLEDButtonManager_SinglePressHandler" function
+               (:prototype-flag t
+                :type "void")
+                nil [5024 5070])
+            ("SRRLEDButtonManager_DoublePressHandler" function
+               (:prototype-flag t
+                :type "void")
+                nil [5071 5117])
+            ("SRRLEDButtonManager_StartWalkStateRegular" function
+               (:prototype-flag t
+                :type "void")
+                nil [5118 5167])
+            ("SRRLEDButtonManager_LongPressHandler" function
+               (:prototype-flag t
+                :type "void")
+                nil [5168 5212])
+            ("SRRLEDButtonManager_SetDockedState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("isDocked" variable (:type "bool") (reparse-symbol arg-sub-list) [5255 5269])
+                    ("showLED" variable (:type "bool") (reparse-symbol arg-sub-list) [5270 5283]))                  
+                :type "void")
+                nil [5214 5284])
+            ("SRRLEDButtonManager_GetRadioSwitchState" function
+               (:prototype-flag t
+                :type "bool")
+                nil [5329 5376])
+            ("SRRLEDButtonManager_OverrideRadioSwitchState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("state" variable (:type "bool") (reparse-symbol arg-sub-list) [5548 5560]))                  
+                :type "void")
+                nil [5497 5561])
+            ("SRRLEDButtonManager_SecurityButtonPressed" function
+               (:prototype-flag t
+                :type "void")
+                nil [5563 5612])
+            ("SRRLEDButtonManager_PowerDown" function
+               (:prototype-flag t
+                :type "void")
+                nil [5614 5651])
+            ("SRRLEDButtonManager_StopWalkState" function
+               (:prototype-flag t
+                :type "void")
+                nil [5653 5694])
+            ("SRRLEDButtonManager_ShowRebootLEDPattern" function
+               (:prototype-flag t
+                :type "void")
+                nil [6133 6181])
+            ("SRRLEDButtonManager_ClearLEDsAndTimers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("notUsed" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6862 6878]))                  
+                :type "void")
+                nil [6818 6879])
+            ("SRRLEDButtonManager_GetTimeRemainingInCurrentEvent" function
+               (:prototype-flag t
+                :type ("MillisecondsType" type (:type "class") nil nil))
+                nil [6881 6951]))          
+    :file "SRRLEDButtonManager.h"
+    :pointmax 6998
+    :fsize 7199
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SRRLEDBUTTONMANAGER_H")
+          ("TOTALLEDSTATES" . ((number "6" 853 . 854)))
+          ("SRRLEDButtonManager_POWER_LED_OFF_TIME" . ((number "5000" 1314 . 1318)))
+          )
+
+    )
+   (semanticdb-table "SRRInterruptServiceEngine.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRINTERRUPTSERVICEENGINE_H" variable (:constant-flag t) nil [356 383])
+            ("SRRTypes.h" include nil nil [961 982])
+            ("../HAL/Project.h" include nil nil [983 1010])
+            ("SRRInterruptServiceEngine_MAX_TIMERS" variable (:constant-flag t) nil [1195 1231])
+            ("SRRInterruptServiceEngine_TimerId_INVALID" variable (:constant-flag t) nil [1244 1285])
+            ("SRRInterruptServiceEngine_TIMERA_CR0_SATURATE" variable (:constant-flag t) nil [1301 1346])
+            ("SRRInterruptServiceEngine_TIMERA_CR0_INIT" variable (:constant-flag t) nil [1360 1401])
+            ("SRRInterruptServiceEngine_TIMERA_CR0_DOUBLE_CLICK" variable (:constant-flag t) nil [1412 1461])
+            ("SRRInterruptServiceEngine_NoTimePresent" variable (:constant-flag t) nil [1474 1513])
+            ("SRRInterruptServiceEngine_TimerId" type
+               (:typedef ("word16" type (:type "class") nil nil)
+                :superclasses "word16"
+                :type "typedef")
+                nil [1893 1942])
+            ("SRRInterruptServiceEngine_TimerExpiredCallback" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1952 2042])
+            ("SRRInterruptServiceEngine_Initialize" function
+               (:prototype-flag t
+                :type "bool")
+                nil [2777 2821])
+            ("SRRInterruptServiceEngine_SetTimerReq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("callbackPtr" variable (:type ("SRRInterruptServiceEngine_TimerExpiredCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3246 3305])
+                    ("time" variable (:type ("MillisecondsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3309 3332]))                  
+                :type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil))
+                nil [3169 3333])
+            ("SRRInterruptServiceEngine_CancelTimerReq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timerId" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3736 3779]))                  
+                :type "bool")
+                nil [3685 3780])
+            ("SRRInterruptServiceEngine_PowerDown" function
+               (:prototype-flag t
+                :type "void")
+                nil [3782 3825])
+            ("SRRInterruptServiceEngine_DisableBatteryThermistor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [4520 4532]))                  
+                :type "void")
+                nil [4463 4533])
+            ("SRRInterruptServiceEngine_EnableBatteryThermistor" function
+               (:prototype-flag t
+                :type "void")
+                nil [5079 5136])
+            ("SRRInterruptServiceEngine_CheckQSCIfOn" function
+               (:prototype-flag t
+                :type "void")
+                nil [5730 5776])
+            ("SRRInterruptServiceEngine_SRRStartShutdownPendingTimer" function
+               (:prototype-flag t
+                :type "void")
+                nil [6372 6434])
+            ("SRRInterruptServiceEngine_CancelShutdownPendingTimer" function
+               (:prototype-flag t
+                :type "void")
+                nil [6797 6857])
+            ("SRRInterruptServiceEngine_DelayLoopInMsec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("delayInMsec" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7376 7396]))                  
+                :type "void")
+                nil [7324 7397])
+            ("SRRInterruptServiceEngine_GetNextTimeTrigger" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timerId" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7461 7503]))                  
+                :type ("MillisecondsType" type (:type "class") nil nil))
+                nil [7399 7504]))          
+    :file "SRRInterruptServiceEngine.h"
+    :pointmax 7505
+    :fsize 7725
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax '((TYPEDEF 1944 . 1951))
+    :lexical-table 
+        '(("SRRInterruptServiceEngine_MAX_TIMERS" . ((number "10" 1233 . 1235)))
+          ("SRRInterruptServiceEngine_NoTimePresent" . ((number "0xFFFFFFFF" 1514 . 1524)))
+          ("SRRInterruptServiceEngine_TIMERA_CR0_INIT" . ((number "0" 1402 . 1403)))
+          ("SRRINTERRUPTSERVICEENGINE_H")
+          ("SRRInterruptServiceEngine_TIMERA_CR0_SATURATE" . ((number "3000" 1347 . 1351)))
+          ("SRRInterruptServiceEngine_TIMERA_CR0_DOUBLE_CLICK" . ((number "700" 1462 . 1465)))
+          ("SRRInterruptServiceEngine_TimerId_INVALID" . ((number "0xFFFF" 1286 . 1292)))
+          )
+
+    )
+   (semanticdb-table "SRRBeaconProcessingManager.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRBEACONPROCESSINGMANAGER_H" variable (:constant-flag t) nil [365 393])
+            ("SRRTypes.h" include nil nil [960 981])
+            ("SRRInterruptServiceEngine.h" include nil nil [982 1020])
+            ("SRRFCAMsg.h" include nil nil [1021 1043])
+            ("SRRBeaconProcessingManager_Initialize" function
+               (:prototype-flag t
+                :type "bool")
+                nil [2020 2065])
+            ("SRRBeaconProcessingManager_StartBeaconMonitoring" function
+               (:prototype-flag t
+                :type "bool")
+                nil [2425 2481])
+            ("SRRBeaconProcessingManager_StopBeaconMonitoring" function
+               (:prototype-flag t
+                :type "bool")
+                nil [2841 2896])
+            ("SRRBeaconProcessingManager_SetGeofenceState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("geofenceState" variable (:type ("SRRTYPES_GeofenceStateType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3305 3347]))                  
+                :type "bool")
+                nil [3251 3348])
+            ("SRRBeaconProcessingManager_MainLoopProcessing" function
+               (:prototype-flag t
+                :type "void")
+                nil [3915 3968])
+            ("SRRBeaconProcessingManager_BeaconTimerExpiredInterrupt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timerId" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4629 4672]))                  
+                :type "void")
+                nil [4564 4673])
+            ("SRRBeaconProcessingManager_RFPacketReceivedISR" function
+               (:prototype-flag t
+                :type "void")
+                nil [5106 5160])
+            ("SRRBeaconProcessingManager_BeaconTimeoutExpiredInterrupt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timerId" variable (:type ("SRRInterruptServiceEngine_TimerId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5762 5805]))                  
+                :type "void")
+                nil [5695 5806])
+            ("SRRBeaconProcessingManager_PowerDown" function
+               (:prototype-flag t
+                :type "void")
+                nil [6272 6316])
+            ("SRRBeaconProcessingManager_InBeaconFence" function
+               (:prototype-flag t
+                :type "bool")
+                nil [6737 6785])
+            ("SRRBeaconProcessingManager_GetBeaconFrameStatistics" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("stats" variable
+                       (:pointer 1
+                        :type ("beaconFrameStatisticsRsp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7271 7304]))                  
+                :type "void")
+                nil [7209 7305])
+            ("SRRBeaconProcessingManager_GetOnDemandLocateCounter" function
+               (:prototype-flag t
+                :type ("byte" type (:type "class") nil nil))
+                nil [7308 7367])
+            ("SRRBeaconProcessingManager_IsODLCounterValid" function
+               (:prototype-flag t
+                :type "bool")
+                nil [7368 7420])
+            ("SRRBeaconProcessingManager_OutOfBeaconFence" function
+               (:prototype-flag t
+                :type "bool")
+                nil [7421 7472]))          
+    :file "SRRBeaconProcessingManager.h"
+    :pointmax 7472
+    :fsize 7720
+    :lastmodtime '(20386 61939)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SRRBEACONPROCESSINGMANAGER_H")
+          )
+
+    )
+   )
+  :file "!drive_c!Documents and Settings!kchimala!Perforce!qcsperforce.qualcomm.com_1666!qcs_main!main!client!fido!10-CA024-P1!ftd_srr!AppLayer!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

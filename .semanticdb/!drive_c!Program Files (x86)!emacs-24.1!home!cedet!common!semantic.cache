@@ -1,0 +1,52 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "cedet.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("when" code nil nil [2198 2281])
+            ("cl" include nil nil [2304 2317])
+            ("cedet-version" variable
+               (:constant-flag t
+                :default-value "1.1")
+                nil [2323 2383])
+            ("cedet-emacs-min-version" variable
+               (:constant-flag t
+                :default-value "22.1")
+                nil [2385 2479])
+            ("cedet-xemacs-min-version" variable
+               (:constant-flag t
+                :default-value "21.4")
+                nil [2480 2572])
+            ("cedet-sxemacs-min-version" variable
+               (:constant-flag t
+                :default-value "22.1.12")
+                nil [2573 2670])
+            ("cedet-packages" variable
+               (:constant-flag t
+                :default-value (\` ((cedet (\, cedet-version) "common" "common") (eieio "1.4" nil "eieio") (semantic "2.1" nil "semantic/doc") (srecode "1.1" nil "srecode") (ede "1.1" nil "ede") (speedbar "1.0.4" nil "speedbar") (cogre "1.1" nil "cogre") (cedet-contrib "1.1" "contrib" nil))))
+                nil [2672 3297])
+            ("when" code nil nil [3299 3791])
+            ("let" code nil nil [3847 5870])
+            ("inversion" include nil nil [5893 5913])
+            ("cedet" function (:user-visible-flag t) nil [5916 7886])
+            ("cedet-version" function (:user-visible-flag t) nil [7888 8562])
+            ("cedet-version-print" function nil nil [8564 9787])
+            ("cedet" package nil nil [9789 9805]))          
+    :file "cedet.el"
+    :pointmax 9830
+    :fsize 9829
+    :lastmodtime '(20362 59689)
+    :unmatched-syntax '((close-paren 5913 . 5914) (symbol 5873 . 5890) (open-paren 5872 . 5873) (close-paren 2320 . 2321) (symbol 2284 . 2301) (open-paren 2283 . 2284))
+    )
+   (semanticdb-table "inversion.el"
+    :file "inversion.el"
+    :fsize 21761
+    :lastmodtime '(20362 59689)
+    )
+   )
+  :file "!drive_c!Program Files (x86)!emacs-24.1!home!cedet!common!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

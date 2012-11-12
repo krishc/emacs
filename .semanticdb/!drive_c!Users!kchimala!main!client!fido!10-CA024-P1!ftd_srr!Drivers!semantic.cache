@@ -1,0 +1,1489 @@
+;; Object Drivers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Drivers/"
+  :tables (list 
+   (semanticdb-table "Radio.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("RADIO_H" variable (:constant-flag t) nil [611 618])
+            ("InitRadio" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [995 1000]))                  
+                :type "void")
+                nil [980 1001])
+            ("ReceiveOn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1172 1177]))                  
+                :type "void")
+                nil [1157 1178])
+            ("ReceiveOff" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1224 1229]))                  
+                :type "void")
+                nil [1208 1230])
+            ("Mrfi_CalculateRssi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rawValue" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1328 1351]))                  
+                :type "signed char")
+                nil [1297 1352]))          
+    :file "Radio.h"
+    :pointmax 1362
+    :fsize 1401
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("RADIO_H")
+          )
+
+    )
+   (semanticdb-table "uart_intfc_cc430.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_intfc_h" variable (:constant-flag t) nil [2368 2380])
+            ("stddef.h" include (:system-flag t) nil [2382 2401])
+            ("uart_cc430.h" include nil nil [2402 2425])
+            ("uart_intfc_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2782 2788]))                  
+                :type "void")
+                nil [2760 2789])
+            ("tx_send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3068 3085])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3086 3098]))                  
+                :type "bool")
+                nil [3054 3099])
+            ("tx_send_payLoadData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3617 3634])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3635 3647]))                  
+                :type "bool")
+                nil [3591 3648])
+            ("tx_send_wait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3668 3685])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3686 3698]))                  
+                :type "bool")
+                nil [3649 3699])
+            ("tx_peek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3782 3788]))                  
+                :type "int")
+                nil [3769 3789])
+            ("rx_peek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3880 3886]))                  
+                :type "int")
+                nil [3867 3887])
+            ("rx_receive" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4129 4140])
+                    ("max_len" variable (:type "int") (reparse-symbol arg-sub-list) [4141 4154]))                  
+                :type "int")
+                nil [4113 4155])
+            ("uart_busy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4293 4299]))                  
+                :type "bool")
+                nil [4277 4300]))          
+    :file "uart_intfc_cc430.h"
+    :pointmax 4310
+    :fsize 4389
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("uart_intfc_h")
+          )
+
+    )
+   (semanticdb-table "PIO.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PIO_H" variable (:constant-flag t) nil [599 604])
+            ("Project.h" include nil nil [606 626])
+            ("InitButtonLeds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [649 654]))                  
+                :type "void")
+                nil [629 655]))          
+    :file "PIO.h"
+    :pointmax 665
+    :fsize 686
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PIO_H")
+          )
+
+    )
+   (semanticdb-table "uart_cc430.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_h" variable (:constant-flag t) nil [2356 2362])
+            ("bool" variable (:constant-flag t) nil [2552 2556])
+            ("true" variable (:constant-flag t) nil [2579 2583])
+            ("false" variable (:constant-flag t) nil [2594 2599])
+            ("stddef.h" include (:system-flag t) nil [2611 2630])
+            ("../HAL/options_cc430.h" include nil nil [2658 2691])
+            ("UART_CLOCK_MHZ" variable (:constant-flag t) nil [3019 3033])
+            ("BSP_CONFIG_CLOCK_MHZ" variable (:constant-flag t) nil [3065 3085])
+            ("UART_IRQ_ENABLED" variable (:constant-flag t) nil [3135 3151])
+            ("UART_IRQ_DISABLED" variable (:constant-flag t) nil [3164 3181])
+            ("UART_IRQ_PENDING" variable (:constant-flag t) nil [3193 3209])
+            ("UART_IRQ_IDLE" variable (:constant-flag t) nil [3222 3235])
+            ("UART_FLOW_CONTROL_ON" variable (:constant-flag t) nil [3293 3313])
+            ("UART_FLOW_CONTROL_OFF" variable (:constant-flag t) nil [3325 3346])
+            ("UART_PARITY_NONE" variable (:constant-flag t) nil [3391 3407])
+            ("UART_PARITY_EVEN" variable (:constant-flag t) nil [3418 3434])
+            ("UART_PARITY_ODD" variable (:constant-flag t) nil [3445 3460])
+            ("UART_1_STOP_BIT" variable (:constant-flag t) nil [3512 3527])
+            ("UART_2_STOP_BITS" variable (:constant-flag t) nil [3540 3556])
+            ("UART_BAUD_RATE" variable (:constant-flag t) nil [3686 3700])
+            ("UART_FLOW_CONTROL" variable (:constant-flag t) nil [3751 3768])
+            ("UART_PARITY_MODE" variable (:constant-flag t) nil [3834 3850])
+            ("UART_STOP_BITS" variable (:constant-flag t) nil [3910 3924])
+            ("UART_CC430_ESC_SEQ" variable (:constant-flag t) nil [3962 3980])
+            ("uart_get_tx_data_type" variable
+               (:functionpointer-flag t
+                :type "unsigned char")
+                nil [20928 20978])
+            ("uart_put_rx_data_type" variable
+               (:functionpointer-flag t
+                :type "unsigned char")
+                nil [21403 21452])
+            ("uart_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21851 21857]))                  
+                :type "void")
+                nil [21835 21858])
+            ("uart_tx_message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handler" variable (:type ("uart_get_tx_data_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22273 22304]))                  
+                :type "unsigned char")
+                nil [22251 22305])
+            ("uart_rx_message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handler" variable (:type ("uart_put_rx_data_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22741 22772]))                  
+                :type "unsigned char")
+                nil [22719 22773]))          
+    :file "uart_cc430.h"
+    :pointmax 22795
+    :fsize 23254
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax '((TYPEDEF 21395 . 21402) (TYPEDEF 20920 . 20927))
+    :lexical-table 
+        '(("UART_IRQ_DISABLED" . ((number "0" 3183 . 3184)))
+          ("false" . ((number "0" 2600 . 2601)))
+          ("UART_IRQ_ENABLED" . ((number "1" 3154 . 3155)))
+          ("UART_IRQ_PENDING" . ((number "1" 3212 . 3213)))
+          ("UART_FLOW_CONTROL_OFF" . ((number "0" 3347 . 3348)))
+          ("UART_PARITY_MODE" . ((symbol "UART_PARITY_EVEN" 3853 . 3869)))
+          ("UART_CC430_ESC_SEQ" . ((number "0x5C" 3982 . 3986)))
+          ("UART_PARITY_EVEN" . ((number "1" 3435 . 3436)))
+          ("UART_PARITY_ODD" . ((number "2" 3462 . 3463)))
+          ("bool" . ((UNSIGNED "unsigned" 2557 . 2565) (CHAR "char" 2566 . 2570)))
+          ("UART_IRQ_IDLE" . ((number "0" 3241 . 3242)))
+          ("UART_1_STOP_BIT" . ((number "0" 3530 . 3531)))
+          ("uart_h")
+          ("UART_2_STOP_BITS" . ((number "1" 3558 . 3559)))
+          ("UART_BAUD_RATE" . ((number "115200" 3701 . 3707)))
+          ("UART_PARITY_NONE" . ((number "0" 3408 . 3409)))
+          ("true" . ((number "1" 2584 . 2585)))
+          ("UART_FLOW_CONTROL_ON" . ((number "1" 3315 . 3316)))
+          ("UART_STOP_BITS" . ((symbol "UART_2_STOP_BITS" 3929 . 3945)))
+          ("UART_CLOCK_MHZ" . ((symbol "BSP_CONFIG_CLOCK_MHZ" 3034 . 3054)))
+          ("BSP_CONFIG_CLOCK_MHZ" . ((number "12" 3087 . 3089)))
+          ("UART_FLOW_CONTROL" . ((symbol "UART_FLOW_CONTROL_OFF" 3770 . 3791)))
+          )
+
+    )
+   (semanticdb-table "io_i2c.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__io_i2c_h__" variable (:constant-flag t) nil [30 42])
+            ("uchar" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1609 1637])
+            ("IO_I2C_SUCCESS" variable (:constant-flag t) nil [1695 1709])
+            ("IO_I2C_ERROR_INIT" variable (:constant-flag t) nil [1728 1745])
+            ("IO_I2C_ERROR_READ" variable (:constant-flag t) nil [1761 1778])
+            ("IO_I2C_ERROR_WRITE" variable (:constant-flag t) nil [1794 1812])
+            ("io_i2c_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1863 1868]))                  
+                :type "short")
+                nil [1844 1869])
+            ("io_i2c_write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i2c_addr" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1889 1904])
+                    ("p_buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1905 1918])
+                    ("buf_len" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1919 1933])
+                    ("issueStop" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1934 1950]))                  
+                :type "short")
+                nil [1870 1951])
+            ("io_i2c_read" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i2c_addr" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1971 1986])
+                    ("p_buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1987 2000])
+                    ("buf_len" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2001 2015]))                  
+                :type "short")
+                nil [1952 2016]))          
+    :file "io_i2c.h"
+    :pointmax 2043
+    :fsize 2098
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IO_I2C_ERROR_WRITE" . ((number "3" 1817 . 1818)))
+          ("__io_i2c_h__")
+          ("IO_I2C_ERROR_READ" . ((number "2" 1784 . 1785)))
+          ("IO_I2C_SUCCESS" . ((number "0" 1718 . 1719)))
+          ("IO_I2C_ERROR_INIT" . ((number "1" 1751 . 1752)))
+          )
+
+    )
+   (semanticdb-table "acc_adxl346.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("msp430.h" include nil nil [1577 1596])
+            ("io_i2c.h" include nil nil [1597 1616])
+            ("acc_adxl346.h" include nil nil [1617 1641])
+            ("SRRConfigurationDataStorage.h" include nil nil [1642 1682])
+            ("USER_BW_RATE" variable (:constant-flag t) nil [1905 1917])
+            ("ACCEL_I2C_ADDR" variable (:constant-flag t) nil [2174 2188])
+            ("ACCEL_10BIT_2G_MULTIPLIER" variable (:constant-flag t) nil [2245 2270])
+            ("ACCEL_THRESH_SCALE_FACTOR" variable (:constant-flag t) nil [2339 2364])
+            ("ACCEL_DUR_SCALE_FACTOR" variable (:constant-flag t) nil [2405 2427])
+            ("ACCEL_LATENT_WINDOW_SCALE_FACTOR" variable (:constant-flag t) nil [2459 2491])
+            ("ACCEL_FREE_FALL_SCALE_FACTOR" variable (:constant-flag t) nil [2522 2550])
+            ("ACCEL_HW_ID_ADXL346" variable (:constant-flag t) nil [2619 2638])
+            ("ACCEL_REG_DEVID" variable (:constant-flag t) nil [2695 2710])
+            ("ACCEL_REG_THRESH_TAP" variable (:constant-flag t) nil [2738 2758])
+            ("ACCEL_REG_OFSX" variable (:constant-flag t) nil [2779 2793])
+            ("ACCEL_REG_OFSY" variable (:constant-flag t) nil [2820 2834])
+            ("ACCEL_REG_OFSZ" variable (:constant-flag t) nil [2861 2875])
+            ("ACCEL_REG_DUR" variable (:constant-flag t) nil [2902 2915])
+            ("ACCEL_REG_LATENT" variable (:constant-flag t) nil [2943 2959])
+            ("ACCEL_REG_WINDOW" variable (:constant-flag t) nil [2984 3000])
+            ("ACCEL_REG_THRESH_ACT" variable (:constant-flag t) nil [3025 3045])
+            ("ACCEL_REG_THRESH_INACT" variable (:constant-flag t) nil [3066 3088])
+            ("ACCEL_REG_TIME_INACT" variable (:constant-flag t) nil [3107 3127])
+            ("ACCEL_REG_ACT_INACT_CTL" variable (:constant-flag t) nil [3148 3171])
+            ("ACCEL_REG_THRESH_FF" variable (:constant-flag t) nil [3189 3208])
+            ("ACCEL_REG_TIME_FF" variable (:constant-flag t) nil [3230 3247])
+            ("ACCEL_REG_TAP_AXES" variable (:constant-flag t) nil [3271 3289])
+            ("ACCEL_REG_ACT_TAP_STATUS" variable (:constant-flag t) nil [3312 3336])
+            ("ACCEL_REG_BW_RATE" variable (:constant-flag t) nil [3353 3370])
+            ("ACCEL_REG_POWER_CTL" variable (:constant-flag t) nil [3394 3413])
+            ("ACCEL_REG_INT_ENABLE" variable (:constant-flag t) nil [3435 3455])
+            ("ACCEL_REG_INT_MAP" variable (:constant-flag t) nil [3476 3493])
+            ("ACCEL_REG_INT_SOURCE" variable (:constant-flag t) nil [3517 3537])
+            ("ACCEL_REG_DATA_FORMAT" variable (:constant-flag t) nil [3558 3579])
+            ("ACCEL_REG_DATAX0" variable (:constant-flag t) nil [3599 3615])
+            ("ACCEL_REG_DATAX1" variable (:constant-flag t) nil [3640 3656])
+            ("ACCEL_REG_DATAY0" variable (:constant-flag t) nil [3681 3697])
+            ("ACCEL_REG_DATAY1" variable (:constant-flag t) nil [3722 3738])
+            ("ACCEL_REG_DATAZ0" variable (:constant-flag t) nil [3763 3779])
+            ("ACCEL_REG_DATAZ1" variable (:constant-flag t) nil [3804 3820])
+            ("ACCEL_REG_FIFO_CTL" variable (:constant-flag t) nil [3845 3863])
+            ("ACCEL_REG_FIFO_STATUS" variable (:constant-flag t) nil [3886 3907])
+            ("ACCEL_REG_TAP_SIGN" variable (:constant-flag t) nil [3927 3945])
+            ("ACCEL_REG_ORIENT_CONF" variable (:constant-flag t) nil [3968 3989])
+            ("ACCEL_REG_ORIENT" variable (:constant-flag t) nil [4009 4025])
+            ("config_state" variable
+               (:typemodifiers ("static")
+                :type "short")
+                nil [4209 4256])
+            ("accel_config_interrupt_io" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4496 4501]))                  
+                :type "void")
+                nil [4458 4502])
+            ("accel_config_i2c_io" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4535 4540]))                  
+                :type "void")
+                nil [4503 4541])
+            ("accel_config_mode" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("config" variable (:type "short") (reparse-symbol arg-sub-list) [4573 4586]))                  
+                :type "short")
+                nil [4542 4587])
+            ("accel_register_read" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("reg_address" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4621 4639])
+                    ("p_reg_val" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4640 4657]))                  
+                :type "short")
+                nil [4588 4658])
+            ("accel_register_write" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("reg_address" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4693 4711])
+                    ("reg_val" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4712 4726]))                  
+                :type "short")
+                nil [4659 4727])
+            ("acc_config" function
+               (:arguments 
+                  ( ("config" variable (:type "short") (reparse-symbol arg-sub-list) [6354 6367]))                  
+                :type "short")
+                nil [6337 7464])
+            ("acc_get_xyz" function
+               (:arguments 
+                  ( ("p_x" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [8174 8185])
+                    ("p_y" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [8186 8197])
+                    ("p_z" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [8198 8209]))                  
+                :type "short")
+                nil [8156 9557])
+            ("acc_get_int_src" function
+               (:arguments 
+                  ( ("p_flags" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [10123 10138]))                  
+                :type "short")
+                nil [10101 10845])
+            ("accel_config_interrupt_io" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11471 11476]))                  
+                :type "void")
+                nil [11433 12286])
+            ("accel_config_i2c_io" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13059 13064]))                  
+                :type "void")
+                nil [13027 14444])
+            ("accel_config_mode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("config" variable (:type "short") (reparse-symbol arg-sub-list) [15885 15898]))                  
+                :type "short")
+                nil [15854 22926])
+            ("accel_register_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("reg_address" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23696 23714])
+                    ("p_reg_val" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23715 23732]))                  
+                :type "short")
+                nil [23663 24452])
+            ("accel_register_read_int_source" function
+               (:arguments 
+                  ( ("p_reg_val" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [25069 25094]))                  
+                :type "bool")
+                nil [25033 25254])
+            ("accel_register_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("reg_address" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26051 26069])
+                    ("reg_val" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26070 26084]))                  
+                :type "short")
+                nil [26017 26648]))          
+    :file "acc_adxl346.c"
+    :pointmax 26679
+    :fsize 27420
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ACCEL_REG_OFSY" . ((number "0x1F" 2848 . 2852)))
+          ("ACCEL_REG_TAP_AXES" . ((number "0x2a" 3299 . 3303)))
+          ("ACCEL_REG_DATAX0" . ((number "0x32" 3627 . 3631)))
+          ("ACCEL_REG_OFSZ" . ((number "0x20" 2889 . 2893)))
+          ("ACCEL_REG_THRESH_FF" . ((number "0x28" 3217 . 3221)))
+          ("ACCEL_REG_INT_SOURCE" . ((number "0x30" 3545 . 3549)))
+          ("ACCEL_REG_DATAX1" . ((number "0x33" 3668 . 3672)))
+          ("ACCEL_REG_FIFO_CTL" . ((number "0x38" 3873 . 3877)))
+          ("ACCEL_REG_TAP_SIGN" . ((number "0x3a" 3955 . 3959)))
+          ("ACCEL_REG_THRESH_INACT" . ((number "0x25" 3094 . 3098)))
+          ("ACCEL_REG_THRESH_ACT" . ((number "0x24" 3053 . 3057)))
+          ("ACCEL_REG_ACT_TAP_STATUS" . ((number "0x2b" 3340 . 3344)))
+          ("ACCEL_REG_DATAY0" . ((number "0x34" 3709 . 3713)))
+          ("ACCEL_REG_DEVID" . ((number "0x00" 2723 . 2727)))
+          ("ACCEL_REG_DUR" . ((number "0x21" 2930 . 2934)))
+          ("ACCEL_REG_DATAY1" . ((number "0x35" 3750 . 3754)))
+          ("ACCEL_REG_ORIENT_CONF" . ((number "0x3b" 3996 . 4000)))
+          ("ACCEL_REG_TIME_INACT" . ((number "0x26" 3135 . 3139)))
+          ("ACCEL_REG_BW_RATE" . ((number "0x2c" 3381 . 3385)))
+          ("ACCEL_10BIT_2G_MULTIPLIER" . ((number "4" 2273 . 2274)))
+          ("ACCEL_LATENT_WINDOW_SCALE_FACTOR" . ((number "125" 2492 . 2495)))
+          ("ACCEL_REG_DATA_FORMAT" . ((number "0x31" 3586 . 3590)))
+          ("ACCEL_REG_DATAZ0" . ((number "0x36" 3791 . 3795)))
+          ("ACCEL_REG_FIFO_STATUS" . ((number "0x39" 3914 . 3918)))
+          ("ACCEL_THRESH_SCALE_FACTOR" . ((number "62" 2367 . 2369)))
+          ("ACCEL_REG_WINDOW" . ((number "0x23" 3012 . 3016)))
+          ("ACCEL_REG_ACT_INACT_CTL" . ((number "0x27" 3176 . 3180)))
+          ("ACCEL_REG_TIME_FF" . ((number "0x29" 3258 . 3262)))
+          ("ACCEL_REG_DATAZ1" . ((number "0x37" 3832 . 3836)))
+          ("ACCEL_REG_THRESH_TAP" . ((number "0x1D" 2766 . 2770)))
+          ("ACCEL_REG_POWER_CTL" . ((number "0x2d" 3422 . 3426)))
+          ("ACCEL_REG_INT_ENABLE" . ((number "0x2e" 3463 . 3467)))
+          ("USER_BW_RATE" . ((number "0x17" 1933 . 1937)))
+          ("ACCEL_FREE_FALL_SCALE_FACTOR" . ((number "5" 2551 . 2552)))
+          ("ACCEL_DUR_SCALE_FACTOR" . ((number "625" 2428 . 2431)))
+          ("ACCEL_HW_ID_ADXL346" . ((number "0xE6" 2647 . 2651)))
+          ("ACCEL_REG_LATENT" . ((number "0x22" 2971 . 2975)))
+          ("ACCEL_I2C_ADDR" . ((number "0x53" 2202 . 2206)))
+          ("ACCEL_REG_OFSX" . ((number "0x1E" 2807 . 2811)))
+          ("ACCEL_REG_INT_MAP" . ((number "0x2f" 3504 . 3508)))
+          ("ACCEL_REG_ORIENT" . ((number "0x3c" 4037 . 4041)))
+          )
+
+    )
+   (semanticdb-table "acc_adxl346.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__acc_adxl346__" variable (:constant-flag t) nil [33 48])
+            ("uart_cc430.h" include nil nil [50 73])
+            ("ACC_SUCCESS" variable (:constant-flag t) nil [1548 1559])
+            ("ACC_ERROR" variable (:constant-flag t) nil [1578 1587])
+            ("ACC_CONFIG_DISABLE" variable (:constant-flag t) nil [1764 1782])
+            ("ACC_CONFIG_INACTIVITY" variable (:constant-flag t) nil [1801 1822])
+            ("ACC_CONFIG_MEASURE_ACC" variable (:constant-flag t) nil [1838 1860])
+            ("ACC_INT_SRC_NONE" variable (:constant-flag t) nil [2047 2063])
+            ("ACC_INT_SRC_ACTIVITY" variable (:constant-flag t) nil [2084 2104])
+            ("ACC_INT_SRC_INACTIVITY" variable (:constant-flag t) nil [2121 2143])
+            ("acc_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("config" variable (:type "short") (reparse-symbol arg-sub-list) [2192 2205]))                  
+                :type "short")
+                nil [2175 2206])
+            ("acc_get_xyz" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p_x" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [2225 2236])
+                    ("p_y" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [2237 2248])
+                    ("p_z" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [2249 2260]))                  
+                :type "short")
+                nil [2207 2261])
+            ("acc_get_int_src" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p_flags" variable
+                       (:pointer 1
+                        :type "short")
+                        (reparse-symbol arg-sub-list) [2284 2299]))                  
+                :type "short")
+                nil [2262 2300])
+            ("accel_register_read_int_source" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p_reg_val" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2337 2362]))                  
+                :type "bool")
+                nil [2301 2363]))          
+    :file "acc_adxl346.h"
+    :pointmax 2392
+    :fsize 2457
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ACC_SUCCESS" . ((number "0" 1568 . 1569)))
+          ("ACC_INT_SRC_NONE" . ((number "0x00" 2071 . 2075)))
+          ("ACC_INT_SRC_ACTIVITY" . ((number "0x01" 2108 . 2112)))
+          ("__acc_adxl346__")
+          ("ACC_CONFIG_INACTIVITY" . ((number "0x01" 1825 . 1829)))
+          ("ACC_ERROR" . ((number "1" 1598 . 1599)))
+          ("ACC_INT_SRC_INACTIVITY" . ((number "0x02" 2145 . 2149)))
+          ("ACC_CONFIG_DISABLE" . ((number "0x00" 1788 . 1792)))
+          ("ACC_CONFIG_MEASURE_ACC" . ((number "0x02" 1862 . 1866)))
+          )
+
+    )
+   (semanticdb-table "uart_intfc_cc430.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_intfc_cc430.h" include nil nil [2436 2465])
+            ("stdlib.h" include (:system-flag t) nil [2466 2485])
+            ("SRRTypes.h" include nil nil [2486 2507])
+            ("csi_common.h" include nil nil [2508 2531])
+            ("RX_TX_BUFFER_SIZE" variable (:constant-flag t) nil [2739 2756])
+            ("uartRx_ReadState" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("uartRx_ReadBody" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2987 3003])
+                          ("uartRx_ReadSync0" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3008 3025])
+                          ("uartRx_ReadSync1" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3030 3048]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2968 3065])
+            ("rx_buff" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [3067 3131])
+            ("rx_bufferMsgCntIn" variable
+               (:typemodifiers ("static" "volatile")
+                :type "unsigned int")
+                nil [3132 3195])
+            ("rx_bufferMSgCntOut" variable
+               (:typemodifiers ("static" "volatile")
+                :type "unsigned int")
+                nil [3196 3259])
+            ("rx_readState" variable
+               (:typemodifiers ("static" "volatile")
+                :type ("uartRx_ReadState" type (:type "class") nil nil))
+                nil [3260 3337])
+            ("rx_writePtr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [3338 3407])
+            ("rx_readPtr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [3409 3478])
+            ("rx_buffEnd" variable
+               (:pointer 1
+                :type "unsigned char")
+                nil [3495 3539])
+            ("tx_buff" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [3540 3604])
+            ("tx_writePtr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [3605 3674])
+            ("tx_readPtr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [3675 3744])
+            ("tx_buffEnd" variable
+               (:pointer 1
+                :type "unsigned char")
+                nil [3761 3805])
+            ("_failureCode" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3807 3837])
+            ("tx_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4036 4054]))                  
+                :type "bool")
+                nil [4019 4055])
+            ("rx_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4073 4090]))                  
+                :type "bool")
+                nil [4056 4091])
+            ("parseDataWithLengthFieldSize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4125 4136])
+                    ("lengthFieldSize" variable (:type "int") (reparse-symbol arg-sub-list) [4136 4156])
+                    ("nextEndFlagLoc" variable (:type "int") (reparse-symbol arg-sub-list) [4157 4176]))                  
+                :type "int")
+                nil [4092 4177])
+            ("_getSpace" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("wr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4194 4212])
+                    ("rd" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4235 4253])
+                    ("bufferSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4276 4302]))                  
+                :type "int")
+                nil [4179 4303])
+            ("_TX_BUF_HAS_SPACE" variable (:constant-flag t) nil [4312 4329])
+            ("_RX_BUF_HAS_SPACE" variable (:constant-flag t) nil [4389 4406])
+            ("_END_OF_MESSAGE" variable (:constant-flag t) nil [4467 4482])
+            ("ONE_BYTE_LEN_TYPE" variable (:constant-flag t) nil [4494 4511])
+            ("uart_intfc_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5194 5200]))                  
+                :type "void")
+                nil [5172 5604])
+            ("_getSpace" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("wr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6087 6105])
+                    ("rd" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6128 6146])
+                    ("bufferSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6169 6195]))                  
+                :type "int")
+                nil [6065 6309])
+            ("_pushTxData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6724 6745])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [6764 6784]))                  
+                :type "bool")
+                nil [6706 7024])
+            ("_popTxData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7424 7444]))                  
+                :type "bool")
+                nil [7408 7607])
+            ("_pushRxData" function
+               (:arguments 
+                  ( ("data" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7998 8017]))                  
+                :type "bool")
+                nil [7981 8173])
+            ("_popRxData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8617 8637])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [8638 8649])
+                    ("procEsc" variable (:type "bool") (reparse-symbol arg-sub-list) [8650 8663]))                  
+                :type "bool")
+                nil [8601 9165])
+            ("_peakRxDataEndFlag" function (:type "int") nil [9774 10475])
+            ("tx_send_payLoadData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11872 11889])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11890 11902]))                  
+                :type "bool")
+                nil [11846 12732])
+            ("tx_send_wait" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13806 13823])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13824 13836]))                  
+                :type "bool")
+                nil [13787 14705])
+            ("tx_send" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15499 15516])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15517 15529]))                  
+                :type "bool")
+                nil [15485 15863])
+            ("tx_peek" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16185 16191]))                  
+                :type "int")
+                nil [16172 16267])
+            ("rx_peek" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16621 16627]))                  
+                :type "int")
+                nil [16608 16785])
+            ("rx_receive" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17511 17522])
+                    ("max_len" variable (:type "int") (reparse-symbol arg-sub-list) [17523 17536]))                  
+                :type "int")
+                nil [17495 18537])
+            ("parseDataWithLengthFieldSize" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18572 18583])
+                    ("lengthFieldSize" variable (:type "int") (reparse-symbol arg-sub-list) [18583 18603])
+                    ("nextEndFlagLoc" variable (:type "int") (reparse-symbol arg-sub-list) [18604 18623]))                  
+                :type "int")
+                nil [18539 19931])
+            ("tx_handler" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [21566 21584]))                  
+                :type "bool")
+                nil [21549 21744])
+            ("rx_handler" function
+               (:arguments 
+                  ( ("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [22160 22177]))                  
+                :type "bool")
+                nil [22143 22929]))          
+    :file "uart_intfc_cc430.c"
+    :pointmax 22930
+    :fsize 23723
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_TX_BUF_HAS_SPACE" (spp-arg-list nil 4329 . 4331) . ((symbol "_getSpace" 4332 . 4341) (semantic-list "(tx_writePtr,tx_readPtr,TX_BUFFER_SIZE)" 4341 . 4380)))
+          ("ONE_BYTE_LEN_TYPE" (spp-arg-list ("x") 4511 . 4514) . ((semantic-list "( (x < 61 && x != SRRFCAMsg_UpdateFeatureReq && x != SRRFCAMsg_GetAMLogsReq)    ||  \\
+                                x == SRRFCAMsg_MsgErrorIndicator  ||  \\
+                                x == SRRFCAMsg_PingReq            ||  \\
+                                x == SRRFCAMsg_PingRsp )" 4516 . 4802)))
+          ("_RX_BUF_HAS_SPACE" (spp-arg-list nil 4406 . 4408) . ((symbol "_getSpace" 4409 . 4418) (semantic-list "(rx_writePtr,rx_readPtr,RX_BUFFER_SIZE)" 4418 . 4457)))
+          ("RX_TX_BUFFER_SIZE" . ((number "50" 2757 . 2759)))
+          ("_END_OF_MESSAGE" . ((number "2" 4483 . 4484)))
+          )
+
+    )
+   (semanticdb-table "uart_cc430.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_cc430.h" include nil nil [2422 2445])
+            ("uart_tx_irq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3084 3090]))                  
+                :type "void")
+                nil [3066 3091])
+            ("uart_rx_irq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3110 3116]))                  
+                :type "void")
+                nil [3092 3117])
+            ("tx_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3203 3221]))                  
+                :type "bool")
+                nil [3186 3222])
+            ("rx_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3240 3257]))                  
+                :type "bool")
+                nil [3223 3258])
+            ("USCI_A0_ISR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3443 3448]))                  
+                :type "void")
+                nil [3426 3449])
+            ("USCI_A0_ISR" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3510 3515]))                  
+                :type "void")
+                nil [3493 4293])
+            ("uart_tx_irq" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4660 4666]))                  
+                :type "void")
+                nil [4642 5905])
+            ("lastStatus" variable (:type "int") nil [6133 6148])
+            ("uart_rx_irq" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6168 6174]))                  
+                :type "void")
+                nil [6150 7200])
+            ("uart_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7577 7583]))                  
+                :type "void")
+                nil [7561 10730])
+            ("uart_tx_message" function
+               (:arguments 
+                  ( ("handler" variable (:type ("uart_get_tx_data_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11242 11273]))                  
+                :type "bool")
+                nil [11220 11359]))          
+    :file "uart_cc430.c"
+    :pointmax 11361
+    :fsize 11684
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax '((symbol 3481 . 3492) (symbol 3466 . 3480) (punctuation 3465 . 3466) (symbol 3459 . 3465) (symbol 3452 . 3458) (punctuation 3451 . 3452) (symbol 3414 . 3425) (symbol 3399 . 3413) (punctuation 3398 . 3399) (symbol 3392 . 3398) (symbol 3385 . 3391) (punctuation 3384 . 3385))
+    )
+   (semanticdb-table "SRRFCAMsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SRRFCAMSG_H" variable (:constant-flag t) nil [324 335])
+            ("SRRTypes.h" include nil nil [902 923])
+            ("SRRConfigurationDataStorage.h" include nil nil [924 964])
+            ("getVersionRspPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Mode" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1189 1203])
+                          ("Major" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1207 1222])
+                          ("Minor" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1226 1241])
+                          ("Patch" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1245 1260])
+                          ("Build" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1264 1279]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1169 1302])
+            ("setLedPatternReqPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("red_on_period" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1405 1428])
+                          ("red_off_period" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1432 1456])
+                          ("blue_on_period" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1460 1484])
+                          ("blue_off_period" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1488 1513]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1384 1539])
+            ("setConfigParamsReqPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("WakeUpPeriodicity" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1642 1669])
+                          ("LowBatteryVoltageThreshold" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1674 1710])
+                          ("BeaconSlowCounterHysteresis" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1714 1751])
+                          ("BeaconTimeoutInBeaconFence" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1755 1791])
+                          ("BeaconTimeoutInBeaconFenceFastHysteresis" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1795 1845])
+                          ("BeaconTimeoutOutsideBeaconFence" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1849 1890])
+                          ("SkipCounter" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1894 1915])
+                          ("WalkDuration" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1919 1941])
+                          ("InToBreachRSSIThreshold" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1946 1979])
+                          ("MaxBatteryHysteresisCounter" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1983 2020])
+                          ("BreachToInRSSIThreshold" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2024 2057])
+                          ("BackInBeaconHysteresisCounter" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2061 2100])
+                          ("CriticalBatteryThreshold" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2104 2138])
+                          ("SufficientBatteryThreshold" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2142 2178]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1621 2206])
+            ("UNPACKED_PARAM_MSG_SIZE" variable (:constant-flag t) nil [2302 2325])
+            ("UNPACKED_AM_PARAM_MSG_SIZE_ENABLED" variable (:constant-flag t) nil [2358 2392])
+            ("UNPACKED_AM_PARAM_MSG_SIZE_DISABLED" variable (:constant-flag t) nil [2404 2439])
+            ("UNPACKED_AM_PARAM_MSG_SIZE" variable (:constant-flag t) nil [2450 2476])
+            ("BeaconData" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fbcId" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2582 2597])
+                          ("channelId" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2601 2620]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2561 2633])
+            ("monitorBeaconReqPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("numFbcs" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2736 2756])
+                          ("beacon" variable
+                             (:dereference 1
+                              :type ("BeaconData" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2760 2781]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2715 2807])
+            ("sendDockNotificationPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("docked" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2830 2849])
+                          ("fbcId" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2853 2871]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2809 2901])
+            ("getInfoRspPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Statemask" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3004 3023])
+                          ("Eventmask" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3027 3046])
+                          ("OnDemandCount" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3050 3073])
+                          ("ACPowerLossCount" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3077 3103]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2983 3123])
+            ("setQscWakeUpTimerReqRspPayload" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("qscWakeUpDuration" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3226 3253]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3205 3286])
+            ("setLogLevelReq" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("logMask" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3389 3406]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3368 3423])
+            ("beaconFrameStatisticsRsp" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("receivedBeaconFramesCounter" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3526 3563])
+                          ("unknownMessagesCounter" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3567 3599])
+                          ("crcPassedCounter" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3603 3629])
+                          ("crcFailedCounter" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3633 3659])
+                          ("crcPassedForGoodBeacon" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3663 3695]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3505 3722])
+            ("SRRFCAMsg_Initialize" function
+               (:prototype-flag t
+                :type "bool")
+                nil [4439 4467])
+            ("SRRFCAMsg_SendVersionRsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("version" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("getVersionRspPayload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4833 4869]))                  
+                :type "bool")
+                nil [4803 4870])
+            ("SRRFCAMsg_SendInfoRsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptrInfoRsp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("getInfoRspPayload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5234 5270]))                  
+                :type "bool")
+                nil [5207 5271])
+            ("SRRFCAMsg_SendLogRsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5629 5640])
+                    ("size" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5640 5652]))                  
+                :type "bool")
+                nil [5603 5653])
+            ("SRRFCAMsg_SendBatteryVoltageRsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("batteryVoltage" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6032 6054]))                  
+                :type "bool")
+                nil [5995 6055])
+            ("SRRFCAMsg_SendBatteryLevelArrayRsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("batteryVoltageQueue" variable
+                       (:pointer 1
+                        :type ("word16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6567 6595]))                  
+                :type "bool")
+                nil [6527 6596])
+            ("SRRFCAMsg_SendBeaconFrameStatisticsRsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statistics" variable
+                       (:pointer 1
+                        :type ("beaconFrameStatisticsRsp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6989 7026]))                  
+                :type "bool")
+                nil [6945 7027])
+            ("SRRFCAMsg_SendPingRsp" function
+               (:prototype-flag t
+                :type "bool")
+                nil [7362 7391])
+            ("SRRFCAMsg_SendStatusChangeInd" function
+               (:prototype-flag t
+                :type "bool")
+                nil [7731 7768])
+            ("SRRFCAMsg_ProcessMessages" function
+               (:prototype-flag t
+                :type "bool")
+                nil [8105 8138])
+            ("SRRFCAMsg_DisableAMFeature" function
+               (:prototype-flag t
+                :type "void")
+                nil [8450 8484]))          
+    :file "SRRFCAMsg.h"
+    :pointmax 8535
+    :fsize 8829
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax '((semantic-list 1163 . 1166) (symbol 1159 . 1163) (number 1164 . 1165) (symbol 1152 . 1158) (number 1164 . 1165) (punctuation 1151 . 1152))
+    :lexical-table 
+        '(("UNPACKED_AM_PARAM_MSG_SIZE_DISABLED" . ((number "7" 2440 . 2441)))
+          ("SRRFCAMSG_H")
+          ("UNPACKED_AM_PARAM_MSG_SIZE_ENABLED" . ((number "31" 2393 . 2395)))
+          ("UNPACKED_PARAM_MSG_SIZE" . ((number "22" 2326 . 2328)))
+          ("UNPACKED_AM_PARAM_MSG_SIZE" . ((number "20" 2477 . 2479)))
+          )
+
+    )
+   (semanticdb-table "SRRFCAMsg.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("uart_intfc_cc430.h" include nil nil [855 884])
+            ("uart_cc430.h" include nil nil [885 908])
+            ("SRRFCAMsg.h" include nil nil [909 931])
+            ("SRRLEDButtonManager.h" include nil nil [932 964])
+            ("SRRConfigurationDataStorage.h" include nil nil [965 1005])
+            ("SRRLEDButtonManager.h" include nil nil [1006 1038])
+            ("SRRBeaconProcessingManager.h" include nil nil [1039 1078])
+            ("SRRFCAInterfaceManager.h" include nil nil [1079 1114])
+            ("SRRLoggingManager.h" include nil nil [1115 1145])
+            ("SRRMainProcessingEngine.h" include nil nil [1146 1182])
+            ("SRRError.h" include nil nil [1183 1204])
+            ("SRRBatteryMonitor.h" include nil nil [1205 1235])
+            ("SRREventReceptor.h" include nil nil [1236 1265])
+            ("csi_common.h" include nil nil [1266 1289])
+            ("SRRAccel.h" include nil nil [1290 1311])
+            ("SRRFlashAdapter.h" include nil nil [1312 1340])
+            ("_SRRFCAMsg_BufferSize" variable (:constant-flag t) nil [1731 1752])
+            ("_SRRFCAMsg_AMLogs_HeaderSize" variable (:constant-flag t) nil [1767 1795])
+            ("_SRRFCAMsg_AMMatSamplingPeriodicity" variable (:constant-flag t) nil [1806 1841])
+            ("MsgRspTail" variable
+               (:dereference 1
+                :constant-flag t
+                :type "char")
+                nil [1881 1962])
+            ("_rxMsgCnt" variable (:type "int") nil [1965 1986])
+            ("SRRInterruptServiceEngine_SRRShutdownPending" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [2179 2242])
+            ("SRRBPM_DockedOnMaster" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [2243 2283])
+            ("SRRConfigurationDataStorage_FBCId" variable
+               (:typemodifiers ("extern")
+                :type ("word32" type (:type "class") nil nil))
+                nil [2284 2336])
+            ("SRRBatt_BatteryVoltageQueue" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("word16" type (:type "class") nil nil))
+                nil [2337 2386])
+            ("_SRRFCAMsg_Buffer" variable
+               (:dereference 1
+                :type "char")
+                nil [2388 2434])
+            ("LogBuffer" variable
+               (:dereference 1
+                :type ("byte" type (:type "class") nil nil))
+                nil [2642 2687])
+            ("_Unpack8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2894 2905]))                  
+                :type ("uint8" type (:type "class") nil nil))
+                nil [2877 2906])
+            ("_Unpack16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2924 2935]))                  
+                :type ("uint16" type (:type "class") nil nil))
+                nil [2907 2936])
+            ("_Unpack32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2954 2965]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [2937 2966])
+            ("SRRFCAMsg_Initialize" function (:type "bool") nil [3470 3516])
+            ("SRRFCAMsg_SendVersionRsp" function
+               (:arguments 
+                  ( ("version" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("getVersionRspPayload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3867 3903]))                  
+                :type "bool")
+                nil [3837 4225])
+            ("SRRFCAMsg_SendInfoRsp" function
+               (:arguments 
+                  ( ("ptrInfoRsp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("getInfoRspPayload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4570 4606]))                  
+                :type "bool")
+                nil [4543 4919])
+            ("SRRFCAMsg_SendLogRsp" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5262 5273])
+                    ("size" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5273 5285]))                  
+                :type "bool")
+                nil [5236 5864])
+            ("SRRFCAMsg_SendActivityLogRsp" function
+               (:arguments 
+                  ( ("BNSdata" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6220 6234])
+                    ("BNSSize" variable (:type ("word16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6234 6249]))                  
+                :type "bool")
+                nil [6186 8765])
+            ("SRRFCAMsg_SendBatteryVoltageRsp" function
+               (:arguments 
+                  ( ("batteryVoltage" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9128 9150]))                  
+                :type "bool")
+                nil [9091 9488])
+            ("SRRFCAMsg_SendBatteryLevelArrayRsp" function
+               (:arguments 
+                  ( ("batteryVoltageQueue" variable
+                       (:pointer 1
+                        :type ("word16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9865 9893]))                  
+                :type "bool")
+                nil [9825 10305])
+            ("SRRFCAMsg_SendPingRsp" function (:type "bool") nil [10620 10815])
+            ("SRRFCAMsg_SendStatusChangeInd" function (:type "bool") nil [11139 11343])
+            ("SRRFCAMsg_SendSetLEDPatternRsp" function (:type "bool") nil [11666 11869])
+            ("SRRFCAMsg_SendSetConfigParamsRsp" function (:type "bool") nil [12193 12400])
+            ("SRRFCAMsg_SendUpdateFeatureRsp" function
+               (:arguments 
+                  ( ("AMFeatureStatus" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12759 12781]))                  
+                :type "bool")
+                nil [12723 13219])
+            ("SRRFCAMsg_SendMonitorBeaconRsp" function (:type "bool") nil [13540 13743])
+            ("SRRFCAMsg_SendSetQSCWakeUpTimerRsp" function (:type "bool") nil [14069 14280])
+            ("SRRFCAMsg_SendSetLogLevelRsp" function (:type "bool") nil [14602 14801])
+            ("SRRFCAMsg_SendDockNotificationRsp" function (:type "bool") nil [15129 15338])
+            ("SRRFCAMsg_SendBeaconFrameStatisticsRsp" function
+               (:arguments 
+                  ( ("statistics" variable
+                       (:pointer 1
+                        :type ("beaconFrameStatisticsRsp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15716 15753]))                  
+                :type "bool")
+                nil [15672 17364])
+            ("_SendErrorReport" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17725 17735])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [17736 17745]))                  
+                :type "void")
+                nil [17703 17979])
+            ("_MsgSizeCheck" function
+               (:arguments 
+                  ( ("msgSize" variable (:type "int") (reparse-symbol arg-sub-list) [18335 18347])
+                    ("msgSizeExp" variable (:type "int") (reparse-symbol arg-sub-list) [18348 18363]))                  
+                :type "bool")
+                nil [18316 18563])
+            ("SRRFCAMsg_ProcessMessages" function (:type "bool") nil [18885 32828])
+            ("_Unpack8" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33161 33172]))                  
+                :type ("uint8" type (:type "class") nil nil))
+                nil [33146 33235])
+            ("_Unpack16" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33569 33580]))                  
+                :type ("uint16" type (:type "class") nil nil))
+                nil [33552 33752])
+            ("_Unpack32" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34086 34097]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [34069 34310])
+            ("SRRFCAMsg_DisableAMFeature" function (:type "void") nil [34621 34865]))          
+    :file "SRRFCAMsg.c"
+    :pointmax 34869
+    :fsize 36130
+    :lastmodtime '(20458 16654)
+    :unmatched-syntax '((symbol 2632 . 2641))
+    :lexical-table 
+        '(("_SRRFCAMsg_BufferSize" . ((number "128" 1755 . 1758)))
+          ("_SRRFCAMsg_AMMatSamplingPeriodicity" . ((number "30" 1842 . 1844)))
+          ("_SRRFCAMsg_AMLogs_HeaderSize" . ((number "9" 1796 . 1797)))
+          )
+
+    )
+   (semanticdb-table "Radio.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("RADIO_C" variable (:constant-flag t) nil [616 623])
+            ("../HAL/Project.h" include nil nil [721 748])
+            ("../HAL/RF1A.h" include nil nil [749 773])
+            ("../AppLayer/SRRBeaconProcessingManager.h" include nil nil [1012 1063])
+            ("PATABLE_VAL" variable (:constant-flag t) nil [1277 1288])
+            ("MRFI_RSSI_OFFSET" variable (:constant-flag t) nil [1338 1354])
+            ("rfSettings" variable
+               (:typemodifiers ("extern")
+                :type ("RF_SETTINGS" type (:type "class") nil nil))
+                nil [1458 1488])
+            ("InitRadio" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1711 1716]))                  
+                :type "void")
+                nil [1696 1717])
+            ("Transmit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1732 1754])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1755 1776]))                  
+                :type "void")
+                nil [1718 1777])
+            ("ReceiveOn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1793 1798]))                  
+                :type "void")
+                nil [1778 1799])
+            ("ReceiveOff" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1816 1821]))                  
+                :type "void")
+                nil [1800 1822])
+            ("Mrfi_CalculateRssi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rawValue" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1854 1877]))                  
+                :type "signed char")
+                nil [1823 1878])
+            ("InitRadio" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2290 2295]))                  
+                :type "void")
+                nil [2275 2541])
+            ("Transmit" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2966 2988])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2989 3010]))                  
+                :type "void")
+                nil [2952 3359])
+            ("ReceiveOn" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3715 3720]))                  
+                :type "void")
+                nil [3700 4061])
+            ("ReceiveOff" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4442 4447]))                  
+                :type "void")
+                nil [4426 4942])
+            ("CC1101_ISR" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5397 5402]))                  
+                :type "void")
+                nil [5381 7287])
+            ("Mrfi_CalculateRssi" function
+               (:arguments 
+                  ( ("rawValue" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7710 7733]))                  
+                :type "signed char")
+                nil [7679 8161]))          
+    :file "Radio.c"
+    :pointmax 8170
+    :fsize 8396
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax '((symbol 5369 . 5380) (symbol 5355 . 5368) (punctuation 5354 . 5355) (symbol 5348 . 5354) (symbol 5341 . 5347) (punctuation 5340 . 5341))
+    :lexical-table 
+        '(("MRFI_RSSI_OFFSET" . ((number "74" 1358 . 1360)))
+          ("RADIO_C")
+          ("PATABLE_VAL" . ((semantic-list "(0xC2)" 1296 . 1302)))
+          )
+
+    )
+   (semanticdb-table "PIO.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PIO_C" variable (:constant-flag t) nil [568 573])
+            ("../HAL/Project.h" include nil nil [671 698])
+            ("PIO.h" include nil nil [699 715])
+            ("InitButtonLeds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1246 1251]))                  
+                :type "void")
+                nil [1226 1252])
+            ("InitButtonLeds" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1730 1735]))                  
+                :type "void")
+                nil [1710 2941]))          
+    :file "PIO.c"
+    :pointmax 2951
+    :fsize 3075
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PIO_C")
+          )
+
+    )
+   (semanticdb-table "io_i2c.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("I2C_TIMEOUT_CNT" variable (:constant-flag t) nil [1693 1708])
+            ("msp430.h" include nil nil [1932 1951])
+            ("io_i2c.h" include nil nil [1952 1971])
+            ("io_i2c_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2633 2638]))                  
+                :type "short")
+                nil [2615 5032])
+            ("io_i2c_write" function
+               (:arguments 
+                  ( ("i2c_addr" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6051 6066])
+                    ("p_buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6067 6080])
+                    ("buf_len" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6081 6095])
+                    ("issueStop" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6096 6112]))                  
+                :type "short")
+                nil [6032 7731])
+            ("io_i2c_read" function
+               (:arguments 
+                  ( ("i2c_addr" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8604 8619])
+                    ("p_buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8620 8633])
+                    ("buf_len" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8634 8648]))                  
+                :type "short")
+                nil [8586 10281]))          
+    :file "io_i2c.c"
+    :pointmax 10302
+    :fsize 10609
+    :lastmodtime '(20458 6511)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("I2C_TIMEOUT_CNT" . ((number "10000" 1712 . 1717)))
+          )
+
+    )
+   )
+  :file "!drive_c!Users!kchimala!main!client!fido!10-CA024-P1!ftd_srr!Drivers!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )
